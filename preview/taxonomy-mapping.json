@@ -1,0 +1,5543 @@
+{
+  "source": {
+    "file": "Copy of 28082026. Total product on MiniApp.xlsx",
+    "sheet": "Product level",
+    "range": "A3:P101",
+    "pricingSheet": "Total MiniApp",
+    "pricingRange": "A3:O91",
+    "levelInterpretation": {
+      "l1": "Prod. Lv 2 / Prod. Lv 2 Name (I:J)",
+      "l2": "Prod. Lv 3 / Prod. Lv 3 Name (K:L)",
+      "l3": "Prod. Lv 4 / Prod. Lv 4 Name (M:N)"
+    },
+    "formulaValues": "Saved cached results of VLOOKUP formulas referencing an external workbook; source workbook unchanged."
+  },
+  "summary": {
+    "customerProducts": 88,
+    "componentRows": 95,
+    "officialPaths": 36,
+    "mappedCustomerProducts": 84,
+    "unmappedCustomerProducts": 4,
+    "pricedCustomerProducts": 88,
+    "uiCategories": 13,
+    "canRegisterCount": 84
+  },
+  "uiCategories": [
+    {
+      "id": "ac",
+      "label": "Điều hòa",
+      "shortLabel": "Điều hòa",
+      "filterLabel": "Công suất",
+      "icon": "ac",
+      "hint": "Chọn theo công suất và loại 1 chiều / 2 chiều",
+      "productCount": 7,
+      "mappedProductCount": 7
+    },
+    {
+      "id": "washer",
+      "label": "Máy giặt",
+      "shortLabel": "Máy giặt",
+      "filterLabel": "Khối lượng giặt",
+      "icon": "washer",
+      "hint": "Chọn theo khối lượng giặt và kiểu lồng",
+      "productCount": 2,
+      "mappedProductCount": 2
+    },
+    {
+      "id": "fridge",
+      "label": "Tủ lạnh",
+      "shortLabel": "Tủ lạnh",
+      "filterLabel": "Dung tích",
+      "icon": "fridge",
+      "hint": "Chọn theo dung tích và kiểu cửa",
+      "productCount": 16,
+      "mappedProductCount": 16
+    },
+    {
+      "id": "dish",
+      "label": "Máy rửa bát",
+      "shortLabel": "Rửa bát",
+      "filterLabel": "Số bộ chén đĩa",
+      "icon": "dish",
+      "hint": "Chọn theo sức chứa và công nghệ rửa",
+      "productCount": 4,
+      "mappedProductCount": 4
+    },
+    {
+      "id": "styler",
+      "label": "Tủ chăm sóc quần áo",
+      "shortLabel": "LG Styler",
+      "filterLabel": "Số móc treo",
+      "icon": "styler",
+      "hint": "Chọn theo số móc treo và kích thước",
+      "productCount": 1,
+      "mappedProductCount": 1
+    },
+    {
+      "id": "air",
+      "label": "Máy lọc không khí",
+      "shortLabel": "Lọc không khí",
+      "filterLabel": "Diện tích phục vụ",
+      "icon": "air",
+      "hint": "Chọn theo diện tích phòng và bộ lọc",
+      "productCount": 12,
+      "mappedProductCount": 12
+    },
+    {
+      "id": "tv",
+      "label": "TV",
+      "shortLabel": "TV",
+      "filterLabel": "Kích thước màn hình",
+      "icon": "tv",
+      "hint": "Chọn theo kích thước và công nghệ màn hình",
+      "productCount": 34,
+      "mappedProductCount": 34
+    },
+    {
+      "id": "washerdryer",
+      "label": "Tháp giặt sấy",
+      "shortLabel": "Tháp giặt sấy",
+      "filterLabel": "Khối lượng giặt / sấy",
+      "icon": "washerdryer",
+      "hint": "Giặt và sấy trong cùng một tháp",
+      "productCount": 1,
+      "mappedProductCount": 1
+    },
+    {
+      "id": "microwave",
+      "label": "Lò vi sóng",
+      "shortLabel": "Lò vi sóng",
+      "filterLabel": "Dung tích",
+      "icon": "microwave",
+      "hint": "Chọn theo dung tích và kiểu lò",
+      "productCount": 4,
+      "mappedProductCount": 4
+    },
+    {
+      "id": "soundbar",
+      "label": "Loa thanh",
+      "shortLabel": "Loa thanh",
+      "filterLabel": "Công suất",
+      "icon": "soundbar",
+      "hint": "Chọn loa thanh cho không gian giải trí",
+      "productCount": 2,
+      "mappedProductCount": 2
+    },
+    {
+      "id": "speaker",
+      "label": "Loa xboom",
+      "shortLabel": "Loa xboom",
+      "filterLabel": "Công suất",
+      "icon": "speaker",
+      "hint": "Khám phá các dòng loa xboom",
+      "productCount": 2,
+      "mappedProductCount": 1
+    },
+    {
+      "id": "dryer",
+      "label": "Máy sấy",
+      "shortLabel": "Máy sấy",
+      "filterLabel": "Khối lượng sấy",
+      "icon": "dryer",
+      "hint": "Chọn theo khối lượng sấy",
+      "productCount": 1,
+      "mappedProductCount": 0
+    },
+    {
+      "id": "dehumidifier",
+      "label": "Máy hút ẩm",
+      "shortLabel": "Máy hút ẩm",
+      "filterLabel": "Công suất hút ẩm",
+      "icon": "dehumidifier",
+      "hint": "Chọn theo nhu cầu hút ẩm",
+      "productCount": 2,
+      "mappedProductCount": 0
+    }
+  ],
+  "officialPaths": [
+    {
+      "l1": {
+        "id": "RFBF",
+        "label": "Bottom Freezer"
+      },
+      "l2": {
+        "id": "RFBFBF",
+        "label": "Bottom Freezer"
+      },
+      "l3": {
+        "id": "RFBFBF2D",
+        "label": "2D Bottom Freezer"
+      },
+      "sourceRows": [
+        4,
+        5,
+        6
+      ],
+      "models": [
+        "LBB33BLGA",
+        "LBB33BLM",
+        "LBB33BGMAI"
+      ],
+      "uiCategoryIds": [
+        "fridge"
+      ]
+    },
+    {
+      "l1": {
+        "id": "WMWK",
+        "label": "Dishwasher"
+      },
+      "l2": {
+        "id": "WMWKWK",
+        "label": "Dishwasher"
+      },
+      "l3": {
+        "id": "WMWKWKDA",
+        "label": "Dishwasher"
+      },
+      "sourceRows": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "models": [
+        "LDT14BGA3",
+        "LDT14BLA4",
+        "LDT14SVA4",
+        "LDN14BLA5"
+      ],
+      "uiCategoryIds": [
+        "dish"
+      ]
+    },
+    {
+      "l1": {
+        "id": "RFBF",
+        "label": "Bottom Freezer"
+      },
+      "l2": {
+        "id": "RFBFMD",
+        "label": "French Door Swing"
+      },
+      "l3": {
+        "id": "RFBFMD4D",
+        "label": "4D F/D Swing"
+      },
+      "sourceRows": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "models": [
+        "LFD61BLGAI",
+        "LFD58BLMAI",
+        "F61BMD",
+        "F58BGD",
+        "LFB58BLMA",
+        "F51EG",
+        "F50BG"
+      ],
+      "uiCategoryIds": [
+        "fridge"
+      ]
+    },
+    {
+      "l1": {
+        "id": "RFSS",
+        "label": "SxS"
+      },
+      "l2": {
+        "id": "RFSSSS",
+        "label": "SxS"
+      },
+      "l3": {
+        "id": "RFSSSS25",
+        "label": "SxS 25CU"
+      },
+      "sourceRows": [
+        18,
+        19
+      ],
+      "models": [
+        "GR-X257BG",
+        "LSI63BLMA"
+      ],
+      "uiCategoryIds": [
+        "fridge"
+      ]
+    },
+    {
+      "l1": {
+        "id": "RFTM",
+        "label": "TMNF"
+      },
+      "l2": {
+        "id": "RFTMTM",
+        "label": "TMNF"
+      },
+      "l3": {
+        "id": "RFTMTMLA",
+        "label": "Large REF"
+      },
+      "sourceRows": [
+        20
+      ],
+      "models": [
+        "T33SV"
+      ],
+      "uiCategoryIds": [
+        "fridge"
+      ]
+    },
+    {
+      "l1": {
+        "id": "RFTM",
+        "label": "TMNF"
+      },
+      "l2": {
+        "id": "RFTMTM",
+        "label": "TMNF"
+      },
+      "l3": {
+        "id": "RFTMTMMA",
+        "label": "Medium REF"
+      },
+      "sourceRows": [
+        21,
+        22,
+        23
+      ],
+      "models": [
+        "T30SV",
+        "T26BG",
+        "T21BG"
+      ],
+      "uiCategoryIds": [
+        "fridge"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE86",
+        "label": "LED LCD TV 86"
+      },
+      "l3": {
+        "id": "TVLE86NU",
+        "label": "LED LCD TV 86 (UD)"
+      },
+      "sourceRows": [
+        24,
+        39
+      ],
+      "models": [
+        "86MRGB86BSA",
+        "86QNED86BSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE75",
+        "label": "LED LCD TV 75"
+      },
+      "l3": {
+        "id": "TVLE75NU",
+        "label": "LED LCD TV 75 (UD)"
+      },
+      "sourceRows": [
+        25,
+        40,
+        44,
+        51
+      ],
+      "models": [
+        "75MRGB86BSA",
+        "75QNED86BSA",
+        "75QNED80BSA",
+        "75NU855BPSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE65",
+        "label": "LED LCD TV 65"
+      },
+      "l3": {
+        "id": "TVLE65NU",
+        "label": "LED LCD TV 65 (UD)"
+      },
+      "sourceRows": [
+        26,
+        41,
+        45,
+        52
+      ],
+      "models": [
+        "65MRGB86BSA",
+        "65QNED86BSA",
+        "65QNED80BSA",
+        "65NU855BPSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLV",
+        "label": "Premium OLED TV"
+      },
+      "l2": {
+        "id": "TVLV83",
+        "label": "Premium OLED TV 83"
+      },
+      "l3": {
+        "id": "TVLV83NU",
+        "label": "Premium OLED TV 83 (UD)"
+      },
+      "sourceRows": [
+        27
+      ],
+      "models": [
+        "OLED83W6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLV",
+        "label": "Premium OLED TV"
+      },
+      "l2": {
+        "id": "TVLV77",
+        "label": "Premium OLED TV 77"
+      },
+      "l3": {
+        "id": "TVLV77NU",
+        "label": "Premium OLED TV 77 (UD)"
+      },
+      "sourceRows": [
+        28
+      ],
+      "models": [
+        "OLED77G6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLV",
+        "label": "Premium OLED TV"
+      },
+      "l2": {
+        "id": "TVLV65",
+        "label": "Premium OLED TV 65"
+      },
+      "l3": {
+        "id": "TVLV65NU",
+        "label": "Premium OLED TV 65 (UD)"
+      },
+      "sourceRows": [
+        29
+      ],
+      "models": [
+        "OLED65G6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLV",
+        "label": "Premium OLED TV"
+      },
+      "l2": {
+        "id": "TVLV55",
+        "label": "Premium OLED TV 55"
+      },
+      "l3": {
+        "id": "TVLV55NU",
+        "label": "Premium OLED TV 55 (UD)"
+      },
+      "sourceRows": [
+        30
+      ],
+      "models": [
+        "OLED55G6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLO",
+        "label": "OLED TV"
+      },
+      "l2": {
+        "id": "TVLO83",
+        "label": "OLED TV 83"
+      },
+      "l3": {
+        "id": "TVLO83NU",
+        "label": "OLED TV 83 (UD)"
+      },
+      "sourceRows": [
+        31
+      ],
+      "models": [
+        "OLED83C6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLO",
+        "label": "OLED TV"
+      },
+      "l2": {
+        "id": "TVLO77",
+        "label": "OLED TV 77"
+      },
+      "l3": {
+        "id": "TVLO77NU",
+        "label": "OLED TV 77 (UD)"
+      },
+      "sourceRows": [
+        32,
+        35
+      ],
+      "models": [
+        "OLED77C6PSA",
+        "OLED77B6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLO",
+        "label": "OLED TV"
+      },
+      "l2": {
+        "id": "TVLO65",
+        "label": "OLED TV 65"
+      },
+      "l3": {
+        "id": "TVLO65NU",
+        "label": "OLED TV 65 (UD)"
+      },
+      "sourceRows": [
+        33,
+        36
+      ],
+      "models": [
+        "OLED65C6PSA",
+        "OLED65B6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLO",
+        "label": "OLED TV"
+      },
+      "l2": {
+        "id": "TVLO55",
+        "label": "OLED TV 55"
+      },
+      "l3": {
+        "id": "TVLO55NU",
+        "label": "OLED TV 55 (UD)"
+      },
+      "sourceRows": [
+        34,
+        37
+      ],
+      "models": [
+        "OLED55C6PSA",
+        "OLED55B6PSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLEA0",
+        "label": "LED LCD TV 100"
+      },
+      "l3": {
+        "id": "TVLEA0NU",
+        "label": "LED LCD TV 100 (UD)"
+      },
+      "sourceRows": [
+        38
+      ],
+      "models": [
+        "100QNED86BS"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE55",
+        "label": "LED LCD TV 55"
+      },
+      "l3": {
+        "id": "TVLE55NU",
+        "label": "LED LCD TV 55 (UD)"
+      },
+      "sourceRows": [
+        42,
+        46,
+        53
+      ],
+      "models": [
+        "55QNED86BSA",
+        "55QNED80BSA",
+        "55NU855BPSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE85",
+        "label": "LED LCD TV 85"
+      },
+      "l3": {
+        "id": "TVLE85NU",
+        "label": "LED LCD TV 85 (UD)"
+      },
+      "sourceRows": [
+        43,
+        50
+      ],
+      "models": [
+        "85QNED80BSA",
+        "85NU855BPSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE50",
+        "label": "LED LCD TV 50"
+      },
+      "l3": {
+        "id": "TVLE50NU",
+        "label": "LED LCD TV 50 (UD)"
+      },
+      "sourceRows": [
+        47,
+        54
+      ],
+      "models": [
+        "50QNED80BSA",
+        "50NU855BPSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE43",
+        "label": "LED LCD TV 43"
+      },
+      "l3": {
+        "id": "TVLE43NU",
+        "label": "LED LCD TV 43 (UD)"
+      },
+      "sourceRows": [
+        48,
+        55
+      ],
+      "models": [
+        "43QNED80BSA",
+        "43NU855BPSA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLE",
+        "label": "LED LCD TV"
+      },
+      "l2": {
+        "id": "TVLE98",
+        "label": "LED LCD TV 98"
+      },
+      "l3": {
+        "id": "TVLE98OU",
+        "label": "LED LCD TV 98 (O/S, UD)"
+      },
+      "sourceRows": [
+        49
+      ],
+      "models": [
+        "98NU855BPSB"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLS",
+        "label": "TV Life Style"
+      },
+      "l2": {
+        "id": "TVLS27",
+        "label": "TV Life Style 27"
+      },
+      "l3": {
+        "id": "TVLS27NQ",
+        "label": "Life Style Display 27 (QHD)"
+      },
+      "sourceRows": [
+        56
+      ],
+      "models": [
+        "27LX6TDGA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    },
+    {
+      "l1": {
+        "id": "HCWC",
+        "label": "Wellness care"
+      },
+      "l2": {
+        "id": "HCWCAS",
+        "label": "Air Solution"
+      },
+      "l3": {
+        "id": "HCWCASAC",
+        "label": "Air Cleaner"
+      },
+      "sourceRows": [
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        79,
+        80,
+        81
+      ],
+      "models": [
+        "AS10GDWH0",
+        "AS65GDWH0",
+        "AS20GPBK0",
+        "AS20GPWU0",
+        "AS20GSHU0",
+        "FS15GPBK0",
+        "AS10GDBY0",
+        "AS65GDBY0",
+        "AS55GGSY0"
+      ],
+      "uiCategoryIds": [
+        "air"
+      ]
+    },
+    {
+      "l1": {
+        "id": "HCWC",
+        "label": "Wellness care"
+      },
+      "l2": {
+        "id": "HCWCAS",
+        "label": "Air Solution"
+      },
+      "l3": {
+        "id": "HCWCASCO",
+        "label": "Air Cleaner_ODM"
+      },
+      "sourceRows": [
+        63,
+        64,
+        82
+      ],
+      "models": [
+        "AS30GGW1A",
+        "AS30GGG1A",
+        "AS60GHWG0"
+      ],
+      "uiCategoryIds": [
+        "air"
+      ]
+    },
+    {
+      "l1": {
+        "id": "ACSR",
+        "label": "SRAC"
+      },
+      "l2": {
+        "id": "ACSRIV",
+        "label": "Inverter"
+      },
+      "l3": {
+        "id": "ACSRIVSU",
+        "label": "Inverter Single Split Wall_O/D"
+      },
+      "sourceRows": [
+        65,
+        67,
+        69,
+        71,
+        73,
+        75,
+        77
+      ],
+      "models": [
+        "IDC09M2",
+        "IDC12M2",
+        "IDC18M2",
+        "IDH09M1",
+        "IDH12M1",
+        "IDH18M1",
+        "IDH24M1"
+      ],
+      "uiCategoryIds": [
+        "ac"
+      ]
+    },
+    {
+      "l1": {
+        "id": "ACSR",
+        "label": "SRAC"
+      },
+      "l2": {
+        "id": "ACSRIV",
+        "label": "Inverter"
+      },
+      "l3": {
+        "id": "ACSRIVSN",
+        "label": "Inverter Single Split Wall_I/D"
+      },
+      "sourceRows": [
+        66,
+        68,
+        70,
+        72,
+        74,
+        76,
+        78
+      ],
+      "models": [
+        "IDC09M2",
+        "IDC12M2",
+        "IDC18M2",
+        "IDH09M1",
+        "IDH12M1",
+        "IDH18M1",
+        "IDH24M1"
+      ],
+      "uiCategoryIds": [
+        "ac"
+      ]
+    },
+    {
+      "l1": {
+        "id": "WMWF",
+        "label": "Clothes Styler"
+      },
+      "l2": {
+        "id": "WMWFWF",
+        "label": "Clothes_Styler"
+      },
+      "l3": {
+        "id": "WMWFWFCA",
+        "label": "Clothes_Styler"
+      },
+      "sourceRows": [
+        85
+      ],
+      "models": [
+        "SC5MBR80H"
+      ],
+      "uiCategoryIds": [
+        "styler"
+      ]
+    },
+    {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLCC",
+        "label": "Clothes Washer_Laundry Center"
+      },
+      "l3": {
+        "id": "WMWLCCLC",
+        "label": "Clothes Stacked Washer Dryer"
+      },
+      "sourceRows": [
+        87
+      ],
+      "models": [
+        "WT2517NHEG"
+      ],
+      "uiCategoryIds": [
+        "washerdryer"
+      ]
+    },
+    {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLTL",
+        "label": "Clothes Washer_Top Loader"
+      },
+      "l3": {
+        "id": "WMWLTLTA",
+        "label": "Clothes Washer_Turbo Drum"
+      },
+      "sourceRows": [
+        88
+      ],
+      "models": [
+        "TX2725AT9G"
+      ],
+      "uiCategoryIds": [
+        "washer"
+      ]
+    },
+    {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLFL",
+        "label": "Clothes Washer_Front Loader"
+      },
+      "l3": {
+        "id": "WMWLFLSC",
+        "label": "Clothes Washer_Drum(DD)_Steam_24"
+      },
+      "sourceRows": [
+        89
+      ],
+      "models": [
+        "FX1412S3KAV"
+      ],
+      "uiCategoryIds": [
+        "washer"
+      ]
+    },
+    {
+      "l1": {
+        "id": "CAMW",
+        "label": "MWO"
+      },
+      "l2": {
+        "id": "CAMWCT",
+        "label": "C/Top_MWO"
+      },
+      "l3": {
+        "id": "CAMWCTSF",
+        "label": "Solo(C/Top)"
+      },
+      "sourceRows": [
+        90,
+        91,
+        92,
+        93
+      ],
+      "models": [
+        "MS2535GIK",
+        "MS3032JAS",
+        "MS2032GIK",
+        "MS2032GAS"
+      ],
+      "uiCategoryIds": [
+        "microwave"
+      ]
+    },
+    {
+      "l1": {
+        "id": "AVAH",
+        "label": "HTS"
+      },
+      "l2": {
+        "id": "AVAHHS",
+        "label": "Soundbar + HTS Speaker"
+      },
+      "l3": {
+        "id": "AVAHHSSO",
+        "label": "Soundbar"
+      },
+      "sourceRows": [
+        94,
+        95
+      ],
+      "models": [
+        "S95AR",
+        "SG10TY"
+      ],
+      "uiCategoryIds": [
+        "soundbar"
+      ]
+    },
+    {
+      "l1": {
+        "id": "AOAA",
+        "label": "Home Audio_OS"
+      },
+      "l2": {
+        "id": "AOAADS",
+        "label": "Wireless Speaker_OS"
+      },
+      "l3": {
+        "id": "AOAADSPS",
+        "label": "Bluetooth Speaker_OS"
+      },
+      "sourceRows": [
+        97
+      ],
+      "models": [
+        "STAGE501"
+      ],
+      "uiCategoryIds": [
+        "speaker"
+      ]
+    },
+    {
+      "l1": {
+        "id": "TVLS",
+        "label": "TV Life Style"
+      },
+      "l2": {
+        "id": "TVLS32",
+        "label": "TV Life Style 32"
+      },
+      "l3": {
+        "id": "TVLS32NU",
+        "label": "Life Style Display 32 (UD)"
+      },
+      "sourceRows": [
+        98
+      ],
+      "models": [
+        "32LX6BDGA"
+      ],
+      "uiCategoryIds": [
+        "tv"
+      ]
+    }
+  ],
+  "unmappedProducts": [
+    {
+      "model": "MD16GQSE0",
+      "modelSuffix": "MD16GQSE0.ABAE",
+      "uiCategoryId": "dehumidifier",
+      "sourceRows": [
+        83
+      ],
+      "availability": "out-of-stock",
+      "sourceAnnotation": "out of stock",
+      "rawTaxonomyValues": [
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A"
+      ]
+    },
+    {
+      "model": "MD19GQGE0",
+      "modelSuffix": "MD19GQGE0.ABAE",
+      "uiCategoryId": "dehumidifier",
+      "sourceRows": [
+        84
+      ],
+      "availability": "out-of-stock",
+      "sourceAnnotation": "out of stock",
+      "rawTaxonomyValues": [
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A"
+      ]
+    },
+    {
+      "model": "DVHP50M",
+      "modelSuffix": "DVHP50M.AMBPEVN",
+      "uiCategoryId": "dryer",
+      "sourceRows": [
+        86
+      ],
+      "availability": "end-of-life",
+      "sourceAnnotation": "EOL",
+      "rawTaxonomyValues": [
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A"
+      ]
+    },
+    {
+      "model": "STAGE301",
+      "modelSuffix": "STAGE301.AVNMLBK",
+      "uiCategoryId": "speaker",
+      "sourceRows": [
+        96
+      ],
+      "availability": "pending-update",
+      "sourceAnnotation": "Sản phẩm này update sau",
+      "rawTaxonomyValues": [
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A",
+        "#N/A"
+      ]
+    }
+  ],
+  "productMappings": [
+    {
+      "productNumber": 1,
+      "model": "LBB33BLGA",
+      "modelSuffix": "LBB33BLGA.ABMPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFBF",
+          "label": "Bottom Freezer"
+        },
+        "l3": {
+          "id": "RFBFBF2D",
+          "label": "2D Bottom Freezer"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            4
+          ],
+          "ranges": [
+            "I4:N4"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 4,
+          "ranges": [
+            "D4:E4",
+            "G4:J4",
+            "L4:O4"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/tu-lanh/tu-lanh-ngan-da-duoi/lbb33blga/",
+          "model": "LBB33BLGA"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 2,
+      "model": "LBB33BLM",
+      "modelSuffix": "LBB33BLM.AEPPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFBF",
+          "label": "Bottom Freezer"
+        },
+        "l3": {
+          "id": "RFBFBF2D",
+          "label": "2D Bottom Freezer"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            5
+          ],
+          "ranges": [
+            "I5:N5"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 5,
+          "ranges": [
+            "D5:E5",
+            "G5:J5",
+            "L5:O5"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 3,
+      "model": "LBB33BGMAI",
+      "modelSuffix": "LBB33BGMAI.ABEPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFBF",
+          "label": "Bottom Freezer"
+        },
+        "l3": {
+          "id": "RFBFBF2D",
+          "label": "2D Bottom Freezer"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            6
+          ],
+          "ranges": [
+            "I6:N6"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 6,
+          "ranges": [
+            "D6:E6",
+            "G6:J6",
+            "L6:O6"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 4,
+      "model": "LDT14BGA3",
+      "modelSuffix": "LDT14BGA3.ANBPEVN",
+      "uiCategoryId": "dish",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWK",
+          "label": "Dishwasher"
+        },
+        "l2": {
+          "id": "WMWKWK",
+          "label": "Dishwasher"
+        },
+        "l3": {
+          "id": "WMWKWKDA",
+          "label": "Dishwasher"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            7
+          ],
+          "ranges": [
+            "I7:N7"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 7,
+          "ranges": [
+            "D7:E7",
+            "G7:J7",
+            "L7:O7"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 5,
+      "model": "LDT14BLA4",
+      "modelSuffix": "LDT14BLA4.ABMPEVN",
+      "uiCategoryId": "dish",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWK",
+          "label": "Dishwasher"
+        },
+        "l2": {
+          "id": "WMWKWK",
+          "label": "Dishwasher"
+        },
+        "l3": {
+          "id": "WMWKWKDA",
+          "label": "Dishwasher"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            8
+          ],
+          "ranges": [
+            "I8:N8"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 8,
+          "ranges": [
+            "D8:E8",
+            "G8:J8",
+            "L8:O8"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/may-rua-bat/ldt14bla4/",
+          "model": "LDT14BLA4"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 6,
+      "model": "LDT14SVA4",
+      "modelSuffix": "LDT14SVA4.APYPEVN",
+      "uiCategoryId": "dish",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWK",
+          "label": "Dishwasher"
+        },
+        "l2": {
+          "id": "WMWKWK",
+          "label": "Dishwasher"
+        },
+        "l3": {
+          "id": "WMWKWKDA",
+          "label": "Dishwasher"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            9
+          ],
+          "ranges": [
+            "I9:N9"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 9,
+          "ranges": [
+            "D9:E9",
+            "G9:J9",
+            "L9:O9"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 7,
+      "model": "LDN14BLA5",
+      "modelSuffix": "LDN14BLA5.ABMPEVN",
+      "uiCategoryId": "dish",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWK",
+          "label": "Dishwasher"
+        },
+        "l2": {
+          "id": "WMWKWK",
+          "label": "Dishwasher"
+        },
+        "l3": {
+          "id": "WMWKWKDA",
+          "label": "Dishwasher"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            10
+          ],
+          "ranges": [
+            "I10:N10"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 10,
+          "ranges": [
+            "D10:E10",
+            "G10:J10",
+            "L10:O10"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 8,
+      "model": "LFD61BLGAI",
+      "modelSuffix": "LFD61BLGAI.ABMPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            11
+          ],
+          "ranges": [
+            "I11:N11"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 11,
+          "ranges": [
+            "D11:E11",
+            "G11:J11",
+            "L11:O11"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 9,
+      "model": "LFD58BLMAI",
+      "modelSuffix": "LFD58BLMAI.AEPPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            12
+          ],
+          "ranges": [
+            "I12:N12"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 12,
+          "ranges": [
+            "D12:E12",
+            "G12:J12",
+            "L12:O12"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 10,
+      "model": "F61BMD",
+      "modelSuffix": "F61BMD.AEPPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            13
+          ],
+          "ranges": [
+            "I13:N13"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 13,
+          "ranges": [
+            "D13:E13",
+            "G13:J13",
+            "L13:O13"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 11,
+      "model": "F58BGD",
+      "modelSuffix": "F58BGD.ABMPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            14
+          ],
+          "ranges": [
+            "I14:N14"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 14,
+          "ranges": [
+            "D14:E14",
+            "G14:J14",
+            "L14:O14"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 12,
+      "model": "LFB58BLMA",
+      "modelSuffix": "LFB58BLMA.AEPPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            15
+          ],
+          "ranges": [
+            "I15:N15"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 15,
+          "ranges": [
+            "D15:E15",
+            "G15:J15",
+            "L15:O15"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 13,
+      "model": "F51EG",
+      "modelSuffix": "F51EG.ADMPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            16
+          ],
+          "ranges": [
+            "I16:N16"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 16,
+          "ranges": [
+            "D16:E16",
+            "G16:J16",
+            "L16:O16"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 14,
+      "model": "F50BG",
+      "modelSuffix": "F50BG.ADBPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFBF",
+          "label": "Bottom Freezer"
+        },
+        "l2": {
+          "id": "RFBFMD",
+          "label": "French Door Swing"
+        },
+        "l3": {
+          "id": "RFBFMD4D",
+          "label": "4D F/D Swing"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            17
+          ],
+          "ranges": [
+            "I17:N17"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 17,
+          "ranges": [
+            "D17:E17",
+            "G17:J17",
+            "L17:O17"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 15,
+      "model": "GR-X257BG",
+      "modelSuffix": "GR-X257BG.AEEPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFSS",
+          "label": "SxS"
+        },
+        "l2": {
+          "id": "RFSSSS",
+          "label": "SxS"
+        },
+        "l3": {
+          "id": "RFSSSS25",
+          "label": "SxS 25CU"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            18
+          ],
+          "ranges": [
+            "I18:N18"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 18,
+          "ranges": [
+            "D18:E18",
+            "G18:J18",
+            "L18:O18"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 16,
+      "model": "LSI63BLMA",
+      "modelSuffix": "LSI63BLMA.AEPPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFSS",
+          "label": "SxS"
+        },
+        "l2": {
+          "id": "RFSSSS",
+          "label": "SxS"
+        },
+        "l3": {
+          "id": "RFSSSS25",
+          "label": "SxS 25CU"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            19
+          ],
+          "ranges": [
+            "I19:N19"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 19,
+          "ranges": [
+            "D19:E19",
+            "G19:J19",
+            "L19:O19"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 17,
+      "model": "T33SV",
+      "modelSuffix": "T33SV.APYPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFTM",
+          "label": "TMNF"
+        },
+        "l2": {
+          "id": "RFTMTM",
+          "label": "TMNF"
+        },
+        "l3": {
+          "id": "RFTMTMLA",
+          "label": "Large REF"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            20
+          ],
+          "ranges": [
+            "I20:N20"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 20,
+          "ranges": [
+            "D20:E20",
+            "G20:J20",
+            "L20:O20"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 18,
+      "model": "T30SV",
+      "modelSuffix": "T30SV.APYPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFTM",
+          "label": "TMNF"
+        },
+        "l2": {
+          "id": "RFTMTM",
+          "label": "TMNF"
+        },
+        "l3": {
+          "id": "RFTMTMMA",
+          "label": "Medium REF"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            21
+          ],
+          "ranges": [
+            "I21:N21"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 21,
+          "ranges": [
+            "D21:E21",
+            "G21:J21",
+            "L21:O21"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 19,
+      "model": "T26BG",
+      "modelSuffix": "T26BG.AGKPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFTM",
+          "label": "TMNF"
+        },
+        "l2": {
+          "id": "RFTMTM",
+          "label": "TMNF"
+        },
+        "l3": {
+          "id": "RFTMTMMA",
+          "label": "Medium REF"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            22
+          ],
+          "ranges": [
+            "I22:N22"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 22,
+          "ranges": [
+            "D22:E22",
+            "G22:J22",
+            "L22:O22"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 20,
+      "model": "T21BG",
+      "modelSuffix": "T21BG.AGKPEVN",
+      "uiCategoryId": "fridge",
+      "canonicalCategory": {
+        "l1": {
+          "id": "RFTM",
+          "label": "TMNF"
+        },
+        "l2": {
+          "id": "RFTMTM",
+          "label": "TMNF"
+        },
+        "l3": {
+          "id": "RFTMTMMA",
+          "label": "Medium REF"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            23
+          ],
+          "ranges": [
+            "I23:N23"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 23,
+          "ranges": [
+            "D23:E23",
+            "G23:J23",
+            "L23:O23"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 21,
+      "model": "86MRGB86BSA",
+      "modelSuffix": "86MRGB86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE86",
+          "label": "LED LCD TV 86"
+        },
+        "l3": {
+          "id": "TVLE86NU",
+          "label": "LED LCD TV 86 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            24
+          ],
+          "ranges": [
+            "I24:N24"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 24,
+          "ranges": [
+            "D24:E24",
+            "G24:J24",
+            "L24:O24"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 22,
+      "model": "75MRGB86BSA",
+      "modelSuffix": "75MRGB86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE75",
+          "label": "LED LCD TV 75"
+        },
+        "l3": {
+          "id": "TVLE75NU",
+          "label": "LED LCD TV 75 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            25
+          ],
+          "ranges": [
+            "I25:N25"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 25,
+          "ranges": [
+            "D25:E25",
+            "G25:J25",
+            "L25:O25"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 23,
+      "model": "65MRGB86BSA",
+      "modelSuffix": "65MRGB86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE65",
+          "label": "LED LCD TV 65"
+        },
+        "l3": {
+          "id": "TVLE65NU",
+          "label": "LED LCD TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            26
+          ],
+          "ranges": [
+            "I26:N26"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 26,
+          "ranges": [
+            "D26:E26",
+            "G26:J26",
+            "L26:O26"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 24,
+      "model": "OLED83W6PSA",
+      "modelSuffix": "OLED83W6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLV",
+          "label": "Premium OLED TV"
+        },
+        "l2": {
+          "id": "TVLV83",
+          "label": "Premium OLED TV 83"
+        },
+        "l3": {
+          "id": "TVLV83NU",
+          "label": "Premium OLED TV 83 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            27
+          ],
+          "ranges": [
+            "I27:N27"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 27,
+          "ranges": [
+            "D27:E27",
+            "G27:J27",
+            "L27:O27"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 25,
+      "model": "OLED77G6PSA",
+      "modelSuffix": "OLED77G6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLV",
+          "label": "Premium OLED TV"
+        },
+        "l2": {
+          "id": "TVLV77",
+          "label": "Premium OLED TV 77"
+        },
+        "l3": {
+          "id": "TVLV77NU",
+          "label": "Premium OLED TV 77 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            28
+          ],
+          "ranges": [
+            "I28:N28"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 28,
+          "ranges": [
+            "D28:E28",
+            "G28:J28",
+            "L28:O28"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 26,
+      "model": "OLED65G6PSA",
+      "modelSuffix": "OLED65G6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLV",
+          "label": "Premium OLED TV"
+        },
+        "l2": {
+          "id": "TVLV65",
+          "label": "Premium OLED TV 65"
+        },
+        "l3": {
+          "id": "TVLV65NU",
+          "label": "Premium OLED TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            29
+          ],
+          "ranges": [
+            "I29:N29"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 29,
+          "ranges": [
+            "D29:E29",
+            "G29:J29",
+            "L29:O29"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 27,
+      "model": "OLED55G6PSA",
+      "modelSuffix": "OLED55G6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLV",
+          "label": "Premium OLED TV"
+        },
+        "l2": {
+          "id": "TVLV55",
+          "label": "Premium OLED TV 55"
+        },
+        "l3": {
+          "id": "TVLV55NU",
+          "label": "Premium OLED TV 55 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            30
+          ],
+          "ranges": [
+            "I30:N30"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 30,
+          "ranges": [
+            "D30:E30",
+            "G30:J30",
+            "L30:O30"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 28,
+      "model": "OLED83C6PSA",
+      "modelSuffix": "OLED83C6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO83",
+          "label": "OLED TV 83"
+        },
+        "l3": {
+          "id": "TVLO83NU",
+          "label": "OLED TV 83 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            31
+          ],
+          "ranges": [
+            "I31:N31"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 31,
+          "ranges": [
+            "D31:E31",
+            "G31:J31",
+            "L31:O31"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 29,
+      "model": "OLED77C6PSA",
+      "modelSuffix": "OLED77C6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO77",
+          "label": "OLED TV 77"
+        },
+        "l3": {
+          "id": "TVLO77NU",
+          "label": "OLED TV 77 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            32
+          ],
+          "ranges": [
+            "I32:N32"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 32,
+          "ranges": [
+            "D32:E32",
+            "G32:J32",
+            "L32:O32"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 30,
+      "model": "OLED65C6PSA",
+      "modelSuffix": "OLED65C6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO65",
+          "label": "OLED TV 65"
+        },
+        "l3": {
+          "id": "TVLO65NU",
+          "label": "OLED TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            33
+          ],
+          "ranges": [
+            "I33:N33"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 33,
+          "ranges": [
+            "D33:E33",
+            "G33:J33",
+            "L33:O33"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 31,
+      "model": "OLED55C6PSA",
+      "modelSuffix": "OLED55C6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO55",
+          "label": "OLED TV 55"
+        },
+        "l3": {
+          "id": "TVLO55NU",
+          "label": "OLED TV 55 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            34
+          ],
+          "ranges": [
+            "I34:N34"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 34,
+          "ranges": [
+            "D34:E34",
+            "G34:J34",
+            "L34:O34"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 32,
+      "model": "OLED77B6PSA",
+      "modelSuffix": "OLED77B6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO77",
+          "label": "OLED TV 77"
+        },
+        "l3": {
+          "id": "TVLO77NU",
+          "label": "OLED TV 77 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            35
+          ],
+          "ranges": [
+            "I35:N35"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 35,
+          "ranges": [
+            "D35:E35",
+            "G35:J35",
+            "L35:O35"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 33,
+      "model": "OLED65B6PSA",
+      "modelSuffix": "OLED65B6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO65",
+          "label": "OLED TV 65"
+        },
+        "l3": {
+          "id": "TVLO65NU",
+          "label": "OLED TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            36
+          ],
+          "ranges": [
+            "I36:N36"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 36,
+          "ranges": [
+            "D36:E36",
+            "G36:J36",
+            "L36:O36"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 34,
+      "model": "OLED55B6PSA",
+      "modelSuffix": "OLED55B6PSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLO",
+          "label": "OLED TV"
+        },
+        "l2": {
+          "id": "TVLO55",
+          "label": "OLED TV 55"
+        },
+        "l3": {
+          "id": "TVLO55NU",
+          "label": "OLED TV 55 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            37
+          ],
+          "ranges": [
+            "I37:N37"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 37,
+          "ranges": [
+            "D37:E37",
+            "G37:J37",
+            "L37:O37"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 35,
+      "model": "100QNED86BS",
+      "modelSuffix": "100QNED86BS.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLEA0",
+          "label": "LED LCD TV 100"
+        },
+        "l3": {
+          "id": "TVLEA0NU",
+          "label": "LED LCD TV 100 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            38
+          ],
+          "ranges": [
+            "I38:N38"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 38,
+          "ranges": [
+            "D38:E38",
+            "G38:J38",
+            "L38:O38"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 36,
+      "model": "86QNED86BSA",
+      "modelSuffix": "86QNED86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE86",
+          "label": "LED LCD TV 86"
+        },
+        "l3": {
+          "id": "TVLE86NU",
+          "label": "LED LCD TV 86 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            39
+          ],
+          "ranges": [
+            "I39:N39"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 39,
+          "ranges": [
+            "D39:E39",
+            "G39:J39",
+            "L39:O39"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/tv-va-loa-thanh/qned-evo/86qned86bsa/",
+          "model": "86QNED86BSA"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 37,
+      "model": "75QNED86BSA",
+      "modelSuffix": "75QNED86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE75",
+          "label": "LED LCD TV 75"
+        },
+        "l3": {
+          "id": "TVLE75NU",
+          "label": "LED LCD TV 75 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            40
+          ],
+          "ranges": [
+            "I40:N40"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 40,
+          "ranges": [
+            "D40:E40",
+            "G40:J40",
+            "L40:O40"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 38,
+      "model": "65QNED86BSA",
+      "modelSuffix": "65QNED86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE65",
+          "label": "LED LCD TV 65"
+        },
+        "l3": {
+          "id": "TVLE65NU",
+          "label": "LED LCD TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            41
+          ],
+          "ranges": [
+            "I41:N41"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 41,
+          "ranges": [
+            "D41:E41",
+            "G41:J41",
+            "L41:O41"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 39,
+      "model": "55QNED86BSA",
+      "modelSuffix": "55QNED86BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE55",
+          "label": "LED LCD TV 55"
+        },
+        "l3": {
+          "id": "TVLE55NU",
+          "label": "LED LCD TV 55 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            42
+          ],
+          "ranges": [
+            "I42:N42"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 42,
+          "ranges": [
+            "D42:E42",
+            "G42:J42",
+            "L42:O42"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 40,
+      "model": "85QNED80BSA",
+      "modelSuffix": "85QNED80BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE85",
+          "label": "LED LCD TV 85"
+        },
+        "l3": {
+          "id": "TVLE85NU",
+          "label": "LED LCD TV 85 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            43
+          ],
+          "ranges": [
+            "I43:N43"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 43,
+          "ranges": [
+            "D43:E43",
+            "G43:J43",
+            "L43:O43"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 41,
+      "model": "75QNED80BSA",
+      "modelSuffix": "75QNED80BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE75",
+          "label": "LED LCD TV 75"
+        },
+        "l3": {
+          "id": "TVLE75NU",
+          "label": "LED LCD TV 75 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            44
+          ],
+          "ranges": [
+            "I44:N44"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 44,
+          "ranges": [
+            "D44:E44",
+            "G44:J44",
+            "L44:O44"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 42,
+      "model": "65QNED80BSA",
+      "modelSuffix": "65QNED80BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE65",
+          "label": "LED LCD TV 65"
+        },
+        "l3": {
+          "id": "TVLE65NU",
+          "label": "LED LCD TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            45
+          ],
+          "ranges": [
+            "I45:N45"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 45,
+          "ranges": [
+            "D45:E45",
+            "G45:J45",
+            "L45:O45"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 43,
+      "model": "55QNED80BSA",
+      "modelSuffix": "55QNED80BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE55",
+          "label": "LED LCD TV 55"
+        },
+        "l3": {
+          "id": "TVLE55NU",
+          "label": "LED LCD TV 55 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            46
+          ],
+          "ranges": [
+            "I46:N46"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 46,
+          "ranges": [
+            "D46:E46",
+            "G46:J46",
+            "L46:O46"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 44,
+      "model": "50QNED80BSA",
+      "modelSuffix": "50QNED80BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE50",
+          "label": "LED LCD TV 50"
+        },
+        "l3": {
+          "id": "TVLE50NU",
+          "label": "LED LCD TV 50 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            47
+          ],
+          "ranges": [
+            "I47:N47"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 47,
+          "ranges": [
+            "D47:E47",
+            "G47:J47",
+            "L47:O47"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 45,
+      "model": "43QNED80BSA",
+      "modelSuffix": "43QNED80BSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE43",
+          "label": "LED LCD TV 43"
+        },
+        "l3": {
+          "id": "TVLE43NU",
+          "label": "LED LCD TV 43 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            48
+          ],
+          "ranges": [
+            "I48:N48"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 48,
+          "ranges": [
+            "D48:E48",
+            "G48:J48",
+            "L48:O48"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 46,
+      "model": "98NU855BPSB",
+      "modelSuffix": "98NU855BPSB.ATVQ",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE98",
+          "label": "LED LCD TV 98"
+        },
+        "l3": {
+          "id": "TVLE98OU",
+          "label": "LED LCD TV 98 (O/S, UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            49
+          ],
+          "ranges": [
+            "I49:N49"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 49,
+          "ranges": [
+            "D49:E49",
+            "G49:J49",
+            "L49:O49"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 47,
+      "model": "85NU855BPSA",
+      "modelSuffix": "85NU855BPSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE85",
+          "label": "LED LCD TV 85"
+        },
+        "l3": {
+          "id": "TVLE85NU",
+          "label": "LED LCD TV 85 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            50
+          ],
+          "ranges": [
+            "I50:N50"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 50,
+          "ranges": [
+            "D50:E50",
+            "G50:J50",
+            "L50:O50"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 48,
+      "model": "75NU855BPSA",
+      "modelSuffix": "75NU855BPSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE75",
+          "label": "LED LCD TV 75"
+        },
+        "l3": {
+          "id": "TVLE75NU",
+          "label": "LED LCD TV 75 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            51
+          ],
+          "ranges": [
+            "I51:N51"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 51,
+          "ranges": [
+            "D51:E51",
+            "G51:J51",
+            "L51:O51"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 49,
+      "model": "65NU855BPSA",
+      "modelSuffix": "65NU855BPSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE65",
+          "label": "LED LCD TV 65"
+        },
+        "l3": {
+          "id": "TVLE65NU",
+          "label": "LED LCD TV 65 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            52
+          ],
+          "ranges": [
+            "I52:N52"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 52,
+          "ranges": [
+            "D52:E52",
+            "G52:J52",
+            "L52:O52"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 50,
+      "model": "55NU855BPSA",
+      "modelSuffix": "55NU855BPSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE55",
+          "label": "LED LCD TV 55"
+        },
+        "l3": {
+          "id": "TVLE55NU",
+          "label": "LED LCD TV 55 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            53
+          ],
+          "ranges": [
+            "I53:N53"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 53,
+          "ranges": [
+            "D53:E53",
+            "G53:J53",
+            "L53:O53"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 51,
+      "model": "50NU855BPSA",
+      "modelSuffix": "50NU855BPSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE50",
+          "label": "LED LCD TV 50"
+        },
+        "l3": {
+          "id": "TVLE50NU",
+          "label": "LED LCD TV 50 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            54
+          ],
+          "ranges": [
+            "I54:N54"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 54,
+          "ranges": [
+            "D54:E54",
+            "G54:J54",
+            "L54:O54"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 52,
+      "model": "43NU855BPSA",
+      "modelSuffix": "43NU855BPSA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLE",
+          "label": "LED LCD TV"
+        },
+        "l2": {
+          "id": "TVLE43",
+          "label": "LED LCD TV 43"
+        },
+        "l3": {
+          "id": "TVLE43NU",
+          "label": "LED LCD TV 43 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            55
+          ],
+          "ranges": [
+            "I55:N55"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 55,
+          "ranges": [
+            "D55:E55",
+            "G55:J55",
+            "L55:O55"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 53,
+      "model": "27LX6TDGA",
+      "modelSuffix": "27LX6TDGA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLS",
+          "label": "TV Life Style"
+        },
+        "l2": {
+          "id": "TVLS27",
+          "label": "TV Life Style 27"
+        },
+        "l3": {
+          "id": "TVLS27NQ",
+          "label": "Life Style Display 27 (QHD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            56
+          ],
+          "ranges": [
+            "I56:N56"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 56,
+          "ranges": [
+            "D56:E56",
+            "G56:J56",
+            "L56:O56"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 54,
+      "model": "AS10GDWH0",
+      "modelSuffix": "AS10GDWH0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            57
+          ],
+          "ranges": [
+            "I57:N57"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 57,
+          "ranges": [
+            "D57:E57",
+            "G57:J57",
+            "L57:O57"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 55,
+      "model": "AS65GDWH0",
+      "modelSuffix": "AS65GDWH0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            58
+          ],
+          "ranges": [
+            "I58:N58"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 58,
+          "ranges": [
+            "D58:E58",
+            "G58:J58",
+            "L58:O58"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 56,
+      "model": "AS20GPBK0",
+      "modelSuffix": "AS20GPBK0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            59
+          ],
+          "ranges": [
+            "I59:N59"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 59,
+          "ranges": [
+            "D59:E59",
+            "G59:J59",
+            "L59:O59"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 57,
+      "model": "AS20GPWU0",
+      "modelSuffix": "AS20GPWU0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            60
+          ],
+          "ranges": [
+            "I60:N60"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 60,
+          "ranges": [
+            "D60:E60",
+            "G60:J60",
+            "L60:O60"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 58,
+      "model": "AS20GSHU0",
+      "modelSuffix": "AS20GSHU0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            61
+          ],
+          "ranges": [
+            "I61:N61"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 61,
+          "ranges": [
+            "D61:E61",
+            "G61:J61",
+            "L61:O61"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 59,
+      "model": "FS15GPBK0",
+      "modelSuffix": "FS15GPBK0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            62
+          ],
+          "ranges": [
+            "I62:N62"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 62,
+          "ranges": [
+            "D62:E62",
+            "G62:J62",
+            "L62:O62"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 60,
+      "model": "AS30GGW1A",
+      "modelSuffix": "AS30GGW1A.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASCO",
+          "label": "Air Cleaner_ODM"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            63
+          ],
+          "ranges": [
+            "I63:N63"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 63,
+          "ranges": [
+            "D63:E63",
+            "G63:J63",
+            "L63:O63"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 61,
+      "model": "AS30GGG1A",
+      "modelSuffix": "AS30GGG1A.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASCO",
+          "label": "Air Cleaner_ODM"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            64
+          ],
+          "ranges": [
+            "I64:N64"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 64,
+          "ranges": [
+            "D64:E64",
+            "G64:J64",
+            "L64:O64"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 62,
+      "model": "IDC09M2",
+      "modelSuffix": "IDC09M2.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDC09M2U.ATYGEVH",
+          "sourceRow": 65,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDC09M2N.ATYGEVH",
+          "sourceRow": 66,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            65,
+            66
+          ],
+          "ranges": [
+            "I65:N65",
+            "I66:N66"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 65,
+          "ranges": [
+            "D65:E65",
+            "G65:J65",
+            "L65:O65"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 63,
+      "model": "IDC12M2",
+      "modelSuffix": "IDC12M2.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDC12M2U.ATYGEVH",
+          "sourceRow": 67,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDC12M2N.ATYGEVH",
+          "sourceRow": 68,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            67,
+            68
+          ],
+          "ranges": [
+            "I67:N67",
+            "I68:N68"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 66,
+          "ranges": [
+            "D66:E66",
+            "G66:J66",
+            "L66:O66"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/dieu-hoa/idc12m2/",
+          "model": "IDC12M2"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 64,
+      "model": "IDC18M2",
+      "modelSuffix": "IDC18M2.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDC18M2U.ATYGEVH",
+          "sourceRow": 69,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDC18M2N.ATYGEVH",
+          "sourceRow": 70,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            69,
+            70
+          ],
+          "ranges": [
+            "I69:N69",
+            "I70:N70"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 67,
+          "ranges": [
+            "D67:E67",
+            "G67:J67",
+            "L67:O67"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 65,
+      "model": "IDH09M1",
+      "modelSuffix": "IDH09M1.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDH09M1U.ATYGEVH",
+          "sourceRow": 71,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDH09M1N.ATYGEVH",
+          "sourceRow": 72,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            71,
+            72
+          ],
+          "ranges": [
+            "I71:N71",
+            "I72:N72"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 68,
+          "ranges": [
+            "D68:E68",
+            "G68:J68",
+            "L68:O68"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 66,
+      "model": "IDH12M1",
+      "modelSuffix": "IDH12M1.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDH12M1U.ATYGEVH",
+          "sourceRow": 73,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDH12M1N.ATYGEVH",
+          "sourceRow": 74,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            73,
+            74
+          ],
+          "ranges": [
+            "I73:N73",
+            "I74:N74"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 69,
+          "ranges": [
+            "D69:E69",
+            "G69:J69",
+            "L69:O69"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 67,
+      "model": "IDH18M1",
+      "modelSuffix": "IDH18M1.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDH18M1U.ATYGEVH",
+          "sourceRow": 75,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDH18M1N.ATYGEVH",
+          "sourceRow": 76,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            75,
+            76
+          ],
+          "ranges": [
+            "I75:N75",
+            "I76:N76"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 70,
+          "ranges": [
+            "D70:E70",
+            "G70:J70",
+            "L70:O70"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 68,
+      "model": "IDH24M1",
+      "modelSuffix": "IDH24M1.ATYGEVH",
+      "uiCategoryId": "ac",
+      "canonicalCategory": {
+        "l1": {
+          "id": "ACSR",
+          "label": "SRAC"
+        },
+        "l2": {
+          "id": "ACSRIV",
+          "label": "Inverter"
+        },
+        "l3": {
+          "id": "ACSRIVSU",
+          "label": "Inverter Single Split Wall_O/D"
+        },
+        "mappingStatus": "matched-component-pair"
+      },
+      "componentCategories": [
+        {
+          "modelSuffix": "IDH24M1U.ATYGEVH",
+          "sourceRow": 77,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSU",
+              "label": "Inverter Single Split Wall_O/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        },
+        {
+          "modelSuffix": "IDH24M1N.ATYGEVH",
+          "sourceRow": 78,
+          "canonicalCategory": {
+            "l1": {
+              "id": "ACSR",
+              "label": "SRAC"
+            },
+            "l2": {
+              "id": "ACSRIV",
+              "label": "Inverter"
+            },
+            "l3": {
+              "id": "ACSRIVSN",
+              "label": "Inverter Single Split Wall_I/D"
+            },
+            "mappingStatus": "matched-workbook"
+          }
+        }
+      ],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            77,
+            78
+          ],
+          "ranges": [
+            "I77:N77",
+            "I78:N78"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 71,
+          "ranges": [
+            "D71:E71",
+            "G71:J71",
+            "L71:O71"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 69,
+      "model": "AS10GDBY0",
+      "modelSuffix": "AS10GDBY0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            79
+          ],
+          "ranges": [
+            "I79:N79"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 72,
+          "ranges": [
+            "D72:E72",
+            "G72:J72",
+            "L72:O72"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 70,
+      "model": "AS65GDBY0",
+      "modelSuffix": "AS65GDBY0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            80
+          ],
+          "ranges": [
+            "I80:N80"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 73,
+          "ranges": [
+            "D73:E73",
+            "G73:J73",
+            "L73:O73"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 71,
+      "model": "AS55GGSY0",
+      "modelSuffix": "AS55GGSY0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASAC",
+          "label": "Air Cleaner"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            81
+          ],
+          "ranges": [
+            "I81:N81"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 74,
+          "ranges": [
+            "D74:E74",
+            "G74:J74",
+            "L74:O74"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 72,
+      "model": "AS60GHWG0",
+      "modelSuffix": "AS60GHWG0.ABAE",
+      "uiCategoryId": "air",
+      "canonicalCategory": {
+        "l1": {
+          "id": "HCWC",
+          "label": "Wellness care"
+        },
+        "l2": {
+          "id": "HCWCAS",
+          "label": "Air Solution"
+        },
+        "l3": {
+          "id": "HCWCASCO",
+          "label": "Air Cleaner_ODM"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            82
+          ],
+          "ranges": [
+            "I82:N82"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 75,
+          "ranges": [
+            "D75:E75",
+            "G75:J75",
+            "L75:O75"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/giai-phap-khong-khi/may-loc-khong-khi/as60ghwg0/",
+          "model": "AS60GHWG0"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 73,
+      "model": "MD16GQSE0",
+      "modelSuffix": "MD16GQSE0.ABAE",
+      "uiCategoryId": "dehumidifier",
+      "canonicalCategory": {
+        "l1": {
+          "id": null,
+          "label": null
+        },
+        "l2": {
+          "id": null,
+          "label": null
+        },
+        "l3": {
+          "id": null,
+          "label": null
+        },
+        "mappingStatus": "source-taxonomy-error"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            83
+          ],
+          "ranges": [
+            "I83:N83"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 76,
+          "ranges": [
+            "D76:E76",
+            "G76:J76",
+            "L76:O76"
+          ]
+        }
+      },
+      "availability": "out-of-stock",
+      "availabilityNote": "out of stock"
+    },
+    {
+      "productNumber": 74,
+      "model": "MD19GQGE0",
+      "modelSuffix": "MD19GQGE0.ABAE",
+      "uiCategoryId": "dehumidifier",
+      "canonicalCategory": {
+        "l1": {
+          "id": null,
+          "label": null
+        },
+        "l2": {
+          "id": null,
+          "label": null
+        },
+        "l3": {
+          "id": null,
+          "label": null
+        },
+        "mappingStatus": "source-taxonomy-error"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            84
+          ],
+          "ranges": [
+            "I84:N84"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 77,
+          "ranges": [
+            "D77:E77",
+            "G77:J77",
+            "L77:O77"
+          ]
+        }
+      },
+      "availability": "out-of-stock",
+      "availabilityNote": "out of stock"
+    },
+    {
+      "productNumber": 75,
+      "model": "SC5MBR80H",
+      "modelSuffix": "SC5MBR80H.ASBPEVN",
+      "uiCategoryId": "styler",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWF",
+          "label": "Clothes Styler"
+        },
+        "l2": {
+          "id": "WMWFWF",
+          "label": "Clothes_Styler"
+        },
+        "l3": {
+          "id": "WMWFWFCA",
+          "label": "Clothes_Styler"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            85
+          ],
+          "ranges": [
+            "I85:N85"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 78,
+          "ranges": [
+            "D78:E78",
+            "G78:J78",
+            "L78:O78"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5mbr80h/",
+          "model": "SC5MBR80H"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 76,
+      "model": "DVHP50M",
+      "modelSuffix": "DVHP50M.AMBPEVN",
+      "uiCategoryId": "dryer",
+      "canonicalCategory": {
+        "l1": {
+          "id": null,
+          "label": null
+        },
+        "l2": {
+          "id": null,
+          "label": null
+        },
+        "l3": {
+          "id": null,
+          "label": null
+        },
+        "mappingStatus": "source-taxonomy-error"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            86
+          ],
+          "ranges": [
+            "I86:N86"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 79,
+          "ranges": [
+            "D79:E79",
+            "G79:J79",
+            "L79:O79"
+          ]
+        }
+      },
+      "availability": "end-of-life",
+      "availabilityNote": "EOL"
+    },
+    {
+      "productNumber": 77,
+      "model": "WT2517NHEG",
+      "modelSuffix": "WT2517NHEG.ABGPEVN",
+      "uiCategoryId": "washerdryer",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWL",
+          "label": "Clothes Washer"
+        },
+        "l2": {
+          "id": "WMWLCC",
+          "label": "Clothes Washer_Laundry Center"
+        },
+        "l3": {
+          "id": "WMWLCCLC",
+          "label": "Clothes Stacked Washer Dryer"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            87
+          ],
+          "ranges": [
+            "I87:N87"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 80,
+          "ranges": [
+            "D80:E80",
+            "G80:J80",
+            "L80:O80"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 78,
+      "model": "TX2725AT9G",
+      "modelSuffix": "TX2725AT9G.AEGPEVN",
+      "uiCategoryId": "washer",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWL",
+          "label": "Clothes Washer"
+        },
+        "l2": {
+          "id": "WMWLTL",
+          "label": "Clothes Washer_Top Loader"
+        },
+        "l3": {
+          "id": "WMWLTLTA",
+          "label": "Clothes Washer_Turbo Drum"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            88
+          ],
+          "ranges": [
+            "I88:N88"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 81,
+          "ranges": [
+            "D81:E81",
+            "G81:J81",
+            "L81:O81"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 79,
+      "model": "FX1412S3KAV",
+      "modelSuffix": "FX1412S3KAV.AEBPEVN",
+      "uiCategoryId": "washer",
+      "canonicalCategory": {
+        "l1": {
+          "id": "WMWL",
+          "label": "Clothes Washer"
+        },
+        "l2": {
+          "id": "WMWLFL",
+          "label": "Clothes Washer_Front Loader"
+        },
+        "l3": {
+          "id": "WMWLFLSC",
+          "label": "Clothes Washer_Drum(DD)_Steam_24"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            89
+          ],
+          "ranges": [
+            "I89:N89"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 82,
+          "ranges": [
+            "D82:E82",
+            "G82:J82",
+            "L82:O82"
+          ]
+        },
+        "specifications": {
+          "url": "https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1412s3kav/",
+          "model": "FX1412S3KAV"
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 80,
+      "model": "MS2535GIK",
+      "modelSuffix": "MS2535GIK.BSEPLVN",
+      "uiCategoryId": "microwave",
+      "canonicalCategory": {
+        "l1": {
+          "id": "CAMW",
+          "label": "MWO"
+        },
+        "l2": {
+          "id": "CAMWCT",
+          "label": "C/Top_MWO"
+        },
+        "l3": {
+          "id": "CAMWCTSF",
+          "label": "Solo(C/Top)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            90
+          ],
+          "ranges": [
+            "I90:N90"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 83,
+          "ranges": [
+            "D83:E83",
+            "G83:J83",
+            "L83:O83"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 81,
+      "model": "MS3032JAS",
+      "modelSuffix": "MS3032JAS.BBKPLVN",
+      "uiCategoryId": "microwave",
+      "canonicalCategory": {
+        "l1": {
+          "id": "CAMW",
+          "label": "MWO"
+        },
+        "l2": {
+          "id": "CAMWCT",
+          "label": "C/Top_MWO"
+        },
+        "l3": {
+          "id": "CAMWCTSF",
+          "label": "Solo(C/Top)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            91
+          ],
+          "ranges": [
+            "I91:N91"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 84,
+          "ranges": [
+            "D84:E84",
+            "G84:J84",
+            "L84:O84"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 82,
+      "model": "MS2032GIK",
+      "modelSuffix": "MS2032GIK.BSEPLVN",
+      "uiCategoryId": "microwave",
+      "canonicalCategory": {
+        "l1": {
+          "id": "CAMW",
+          "label": "MWO"
+        },
+        "l2": {
+          "id": "CAMWCT",
+          "label": "C/Top_MWO"
+        },
+        "l3": {
+          "id": "CAMWCTSF",
+          "label": "Solo(C/Top)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            92
+          ],
+          "ranges": [
+            "I92:N92"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 85,
+          "ranges": [
+            "D85:E85",
+            "G85:J85",
+            "L85:O85"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 83,
+      "model": "MS2032GAS",
+      "modelSuffix": "MS2032GAS.BBKPLVN",
+      "uiCategoryId": "microwave",
+      "canonicalCategory": {
+        "l1": {
+          "id": "CAMW",
+          "label": "MWO"
+        },
+        "l2": {
+          "id": "CAMWCT",
+          "label": "C/Top_MWO"
+        },
+        "l3": {
+          "id": "CAMWCTSF",
+          "label": "Solo(C/Top)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            93
+          ],
+          "ranges": [
+            "I93:N93"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 86,
+          "ranges": [
+            "D86:E86",
+            "G86:J86",
+            "L86:O86"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 84,
+      "model": "S95AR",
+      "modelSuffix": "S95AR.DVNMLLK",
+      "uiCategoryId": "soundbar",
+      "canonicalCategory": {
+        "l1": {
+          "id": "AVAH",
+          "label": "HTS"
+        },
+        "l2": {
+          "id": "AVAHHS",
+          "label": "Soundbar + HTS Speaker"
+        },
+        "l3": {
+          "id": "AVAHHSSO",
+          "label": "Soundbar"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            94
+          ],
+          "ranges": [
+            "I94:N94"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 87,
+          "ranges": [
+            "D87:E87",
+            "G87:J87",
+            "L87:O87"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 85,
+      "model": "SG10TY",
+      "modelSuffix": "SG10TY.DVNMLLK",
+      "uiCategoryId": "soundbar",
+      "canonicalCategory": {
+        "l1": {
+          "id": "AVAH",
+          "label": "HTS"
+        },
+        "l2": {
+          "id": "AVAHHS",
+          "label": "Soundbar + HTS Speaker"
+        },
+        "l3": {
+          "id": "AVAHHSSO",
+          "label": "Soundbar"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            95
+          ],
+          "ranges": [
+            "I95:N95"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 88,
+          "ranges": [
+            "D88:E88",
+            "G88:J88",
+            "L88:O88"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 86,
+      "model": "STAGE301",
+      "modelSuffix": "STAGE301.AVNMLBK",
+      "uiCategoryId": "speaker",
+      "canonicalCategory": {
+        "l1": {
+          "id": null,
+          "label": null
+        },
+        "l2": {
+          "id": null,
+          "label": null
+        },
+        "l3": {
+          "id": null,
+          "label": null
+        },
+        "mappingStatus": "source-taxonomy-error"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            96
+          ],
+          "ranges": [
+            "I96:N96"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 89,
+          "ranges": [
+            "D89:E89",
+            "G89:J89",
+            "L89:O89"
+          ]
+        }
+      },
+      "availability": "pending-update",
+      "availabilityNote": "Sản phẩm này update sau"
+    },
+    {
+      "productNumber": 87,
+      "model": "STAGE501",
+      "modelSuffix": "STAGE501.AVNMLBK",
+      "uiCategoryId": "speaker",
+      "canonicalCategory": {
+        "l1": {
+          "id": "AOAA",
+          "label": "Home Audio_OS"
+        },
+        "l2": {
+          "id": "AOAADS",
+          "label": "Wireless Speaker_OS"
+        },
+        "l3": {
+          "id": "AOAADSPS",
+          "label": "Bluetooth Speaker_OS"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            97
+          ],
+          "ranges": [
+            "I97:N97"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 90,
+          "ranges": [
+            "D90:E90",
+            "G90:J90",
+            "L90:O90"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    },
+    {
+      "productNumber": 88,
+      "model": "32LX6BDGA",
+      "modelSuffix": "32LX6BDGA.ATV",
+      "uiCategoryId": "tv",
+      "canonicalCategory": {
+        "l1": {
+          "id": "TVLS",
+          "label": "TV Life Style"
+        },
+        "l2": {
+          "id": "TVLS32",
+          "label": "TV Life Style 32"
+        },
+        "l3": {
+          "id": "TVLS32NU",
+          "label": "Life Style Display 32 (UD)"
+        },
+        "mappingStatus": "matched-workbook"
+      },
+      "componentCategories": [],
+      "source": {
+        "workbook": "Copy of 28082026. Total product on MiniApp.xlsx",
+        "taxonomy": {
+          "sheet": "Product level",
+          "rows": [
+            98
+          ],
+          "ranges": [
+            "I98:N98"
+          ],
+          "valueMode": "cached-external-formula-results"
+        },
+        "pricing": {
+          "sheet": "Total MiniApp",
+          "row": 91,
+          "ranges": [
+            "D91:E91",
+            "G91:J91",
+            "L91:O91"
+          ]
+        }
+      },
+      "availability": "listed",
+      "availabilityNote": ""
+    }
+  ],
+  "notes": [
+    "All 88 numbered products are retained. Seven AC indoor/outdoor pairs are one customer product each; both exact component taxonomy paths are retained.",
+    "LG IDs come directly from the workbook. Four source #N/A classifications remain unmapped.",
+    "Lifestyle displays remain in TV and use the style facet.",
+    "Representative model specifications were verified against exact LG manufacturer pages. Other missing specifications remain blank.",
+    "Model LBB33BLGA has a source annotation InstaView in Product level P4, but the verified manufacturer page describes a 335L glass-door refrigerator. That annotation is preserved only in source data and is not promoted as a feature."
+  ]
+}
