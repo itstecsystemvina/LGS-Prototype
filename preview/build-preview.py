@@ -49,7 +49,7 @@ for weight, filename in [(400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (
         font.save(output)
     fonts += "@font-face{font-family:'Montserrat';font-style:normal;font-weight:" + str(weight) + ";font-display:swap;src:url('" + data_uri(output, 'font/woff') + "') format('woff')}\n"
 
-css = (ROOT / 'miniapp.css').read_text()
+css = '\n'.join((ROOT / filename).read_text() for filename in ('miniapp.css', 'flow.css', 'consultation.css'))
 data = (ROOT / 'catalog-data.js').read_text()
 if (ROOT / 'catalog-full.js').exists():
     full = (ROOT / 'catalog-full.js').read_text()
@@ -62,7 +62,14 @@ if (ROOT / 'catalog-full.js').exists():
     assets = {key: value for key, value in assets.items() if key in used}
 js = (ROOT / 'miniapp.js').read_text()
 font_license = (ASSET_DIR / 'Montserrat-OFL.txt').read_text()
-routes = {'home.html': '/home', 'products.html': '/products', 'product.html': '/product/dish', 'subscribe.html': '/subscribe/dish?step=1'}
+routes = {
+    'home.html': '/home',
+    'products.html': '/products',
+    'product.html': '/product/dish',
+    'checkout.html': '/checkout/dish?step=1',
+    'consultation.html': '/consult/dish',
+    'subscribe.html': '/checkout/dish?step=1',
+}
 for filename, route in routes.items():
     html = f'''<!doctype html>
 <html lang="vi">
@@ -79,7 +86,7 @@ for filename, route in routes.items():
 <div class="app" id="app"></div>
 <div class="overlay" id="sheet-root" hidden></div>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
-<aside class="preview-ribbon"><strong>LG Subscribe</strong>Mobile MiniApp concept<br>Montserrat · LG brand palette</aside>
+<aside class="preview-ribbon"><strong>LG Subscribe</strong>Showroom direction · v3<br>Montserrat · LG brand palette</aside>
 <noscript><p style="padding:24px;text-align:center">Bật JavaScript để trải nghiệm bản xem trước MiniApp.</p></noscript>
 <script>window.LG_ASSETS={json.dumps(assets, ensure_ascii=False)};window.LG_DEFAULT_ROUTE={json.dumps(route)};</script>
 <script>{data}</script>
