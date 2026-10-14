@@ -1,4 +1,4 @@
-/* 88 numbered workbook products, with paired AC components grouped by customer model. Unknown source fields remain blank or null. */
+/* 88 numbered (+ draft products fetched from lg.com/vn on 2026-10-14, flagged draft:true) — 88 numbered workbook products, with paired AC components grouped by customer model. Unknown source fields remain blank or null. */
 window.LG_FULL_CATEGORIES = [
   {
     "id": "ac",
@@ -6149,12 +6149,12 @@ window.LG_FULL_CATALOG_DATA = [
       "36": 15480000
     },
     "attributes": {
-      "capacity": "",
-      "size": "",
+      "capacity": "16 L/ngày",
+      "size": "38,2 × 71,5 × 29,6 cm",
       "technology": "",
       "color": "",
       "style": "Máy hút ẩm",
-      "widthCm": null
+      "widthCm": 38.2
     },
     "features": [],
     "sourceCategory": {
@@ -6394,12 +6394,12 @@ window.LG_FULL_CATALOG_DATA = [
       "36": 29160000
     },
     "attributes": {
-      "capacity": "",
-      "size": "",
+      "capacity": "10,5 kg",
+      "size": "60 × 85 × 66 cm",
       "technology": "",
       "color": "",
       "style": "Máy sấy",
-      "widthCm": null
+      "widthCm": 60
     },
     "features": [],
     "sourceCategory": {
@@ -6473,12 +6473,12 @@ window.LG_FULL_CATALOG_DATA = [
       "36": 72720000
     },
     "attributes": {
-      "capacity": "",
-      "size": "",
+      "capacity": "Giặt 25 kg / Sấy 17 kg",
+      "size": "70 × 189 × 83 cm",
       "technology": "",
       "color": "",
       "style": "WashTower",
-      "widthCm": null
+      "widthCm": 70
     },
     "features": [],
     "sourceCategory": {
@@ -7403,5 +7403,1393 @@ window.LG_FULL_CATALOG_DATA = [
         ]
       }
     }
+  },
+  {
+    "id": "sc5gmr80h",
+    "uiCategoryId": "styler",
+    "productNumber": 89,
+    "model": "SC5GMR80H",
+    "modelSuffix": "",
+    "name": "LG Styler 5 móc",
+    "subtitle": "Chăm sóc quần áo · Gương kính đen",
+    "imageKey": "styler",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "styler"
+    ],
+    "buyPrice": 50590000,
+    "monthly": {
+      "12": 4380000,
+      "24": 2320000,
+      "36": 1700000
+    },
+    "contractTotals": {
+      "12": 52560000,
+      "24": 55680000,
+      "36": 61200000
+    },
+    "attributes": {
+      "capacity": "5 món đồ + 1 quần dài",
+      "size": "60 × 196,5 × 62 cm",
+      "technology": "TrueSteam · Hẹn giờ trễ 3-19 giờ",
+      "color": "Gương kính đen",
+      "style": "Tủ chăm sóc quần áo",
+      "widthCm": 60
+    },
+    "features": [
+      "Hơi nước TrueSteam",
+      "Chế độ ban đêm",
+      "5 món đồ + 1 quần dài"
+    ],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "Styler"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWF",
+        "label": "Clothes Styler"
+      },
+      "l2": {
+        "id": "WMWFWF",
+        "label": "Clothes_Styler"
+      },
+      "l3": {
+        "id": "WMWFWFCA",
+        "label": "Clothes_Styler"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5gmr80h/",
+        "model": "SC5GMR80H",
+        "priceVnd": 50590000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "sc5mnr4g",
+    "uiCategoryId": "styler",
+    "productNumber": 90,
+    "model": "SC5MNR4G",
+    "modelSuffix": "",
+    "name": "LG Styler 5 móc",
+    "subtitle": "Chăm sóc quần áo · Xanh lá",
+    "imageKey": "styler",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "styler"
+    ],
+    "buyPrice": 42890000,
+    "monthly": {
+      "12": 3710000,
+      "24": 1960000,
+      "36": 1440000
+    },
+    "contractTotals": {
+      "12": 44520000,
+      "24": 47040000,
+      "36": 51840000
+    },
+    "attributes": {
+      "capacity": "5 món đồ + 1 quần dài",
+      "size": "60 × 196,5 × 62 cm",
+      "technology": "TrueSteam · Khử trùng mạnh · Giữ nếp ly quần",
+      "color": "Xanh lá (Màu lục mặt đất)",
+      "style": "Tủ chăm sóc quần áo",
+      "widthCm": 60
+    },
+    "features": [
+      "Hơi nước TrueSteam",
+      "Khử trùng mạnh",
+      "Giữ nếp ly quần"
+    ],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "Styler"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWF",
+        "label": "Clothes Styler"
+      },
+      "l2": {
+        "id": "WMWFWF",
+        "label": "Clothes_Styler"
+      },
+      "l3": {
+        "id": "WMWFWFCA",
+        "label": "Clothes_Styler"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/tu-cham-soc-quan-ao-thong-minh-styler/sc5mnr4g/",
+        "model": "SC5MNR4G",
+        "priceVnd": 42890000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "wt1410nheg",
+    "uiCategoryId": "washerdryer",
+    "productNumber": 91,
+    "model": "WT1410NHEG",
+    "modelSuffix": "",
+    "name": "Tháp giặt sấy WashTower 14/10 kg",
+    "subtitle": "WashTower · Xanh/be",
+    "imageKey": "washerdryer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washerdryer"
+    ],
+    "buyPrice": 48790000,
+    "monthly": {
+      "12": 4220000,
+      "24": 2230000,
+      "36": 1640000
+    },
+    "contractTotals": {
+      "12": 50640000,
+      "24": 53520000,
+      "36": 59040000
+    },
+    "attributes": {
+      "capacity": "Giặt 14 kg / Sấy 10 kg",
+      "size": "60 × 165,5 × 66 cm",
+      "technology": "WashTower",
+      "color": "Xanh/be",
+      "style": "WashTower",
+      "widthCm": 60
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "WashTower"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLCC",
+        "label": "Clothes Washer_Laundry Center"
+      },
+      "l3": {
+        "id": "WMWLCCLC",
+        "label": "Clothes Stacked Washer Dryer"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/thap-giat-say-washtower/wt1410nheg/",
+        "model": "WT1410NHEG",
+        "priceVnd": 48790000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "wt1410nhb",
+    "uiCategoryId": "washerdryer",
+    "productNumber": 92,
+    "model": "WT1410NHB",
+    "modelSuffix": "",
+    "name": "Tháp giặt sấy WashTower 14/10 kg",
+    "subtitle": "WashTower · Đen",
+    "imageKey": "washerdryer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washerdryer"
+    ],
+    "buyPrice": 48790000,
+    "monthly": {
+      "12": 4220000,
+      "24": 2230000,
+      "36": 1640000
+    },
+    "contractTotals": {
+      "12": 50640000,
+      "24": 53520000,
+      "36": 59040000
+    },
+    "attributes": {
+      "capacity": "Giặt 14 kg / Sấy 10 kg",
+      "size": "60 × 165,5 × 66 cm",
+      "technology": "WashTower",
+      "color": "Đen",
+      "style": "WashTower",
+      "widthCm": 60
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "WashTower"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLCC",
+        "label": "Clothes Washer_Laundry Center"
+      },
+      "l3": {
+        "id": "WMWLCCLC",
+        "label": "Clothes Stacked Washer Dryer"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/thap-giat-say-washtower/wt1410nhb/",
+        "model": "WT1410NHB",
+        "priceVnd": 48790000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "rb09nhp5w",
+    "uiCategoryId": "dryer",
+    "productNumber": 93,
+    "model": "RB09NHP5W",
+    "modelSuffix": "",
+    "name": "Máy sấy bơm nhiệt 9 kg",
+    "subtitle": "Máy sấy · Trắng",
+    "imageKey": "dryer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "dryer"
+    ],
+    "buyPrice": 17990000,
+    "monthly": {
+      "12": 1560000,
+      "24": 820000,
+      "36": 600000
+    },
+    "contractTotals": {
+      "12": 18720000,
+      "24": 19680000,
+      "36": 21600000
+    },
+    "attributes": {
+      "capacity": "9 kg",
+      "size": "60 × 85 × 66 cm",
+      "technology": "AI DUAL Inverter Heat Pump",
+      "color": "Trắng",
+      "style": "Máy sấy",
+      "widthCm": 60
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "Dryer"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": null,
+        "label": null
+      },
+      "l2": {
+        "id": null,
+        "label": null
+      },
+      "l3": {
+        "id": null,
+        "label": null
+      },
+      "mappingStatus": "draft-unmapped"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-say-quan-ao/rb09nhp5w/",
+        "model": "RB09NHP5W",
+        "priceVnd": 17990000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "rx12vhp5g",
+    "uiCategoryId": "dryer",
+    "productNumber": 94,
+    "model": "RX12VHP5G",
+    "modelSuffix": "",
+    "name": "Máy sấy bơm nhiệt 12 kg",
+    "subtitle": "Máy sấy · Than ánh kim",
+    "imageKey": "dryer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "dryer"
+    ],
+    "buyPrice": 22990000,
+    "monthly": {
+      "12": 1990000,
+      "24": 1050000,
+      "36": 770000
+    },
+    "contractTotals": {
+      "12": 23880000,
+      "24": 25200000,
+      "36": 27720000
+    },
+    "attributes": {
+      "capacity": "12 kg",
+      "size": "",
+      "technology": "AI DUAL Inverter Heat Pump",
+      "color": "Than ánh kim",
+      "style": "Máy sấy",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "Dryer"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": null,
+        "label": null
+      },
+      "l2": {
+        "id": null,
+        "label": null
+      },
+      "l3": {
+        "id": null,
+        "label": null
+      },
+      "mappingStatus": "draft-unmapped"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-say-quan-ao/rx12vhp5g/",
+        "model": "RX12VHP5G",
+        "priceVnd": 22990000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "dvhp50w",
+    "uiCategoryId": "dryer",
+    "productNumber": 95,
+    "model": "DVHP50W",
+    "modelSuffix": "",
+    "name": "Máy sấy bơm nhiệt 10,5 kg",
+    "subtitle": "Máy sấy · Trắng",
+    "imageKey": "dryer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "dryer"
+    ],
+    "buyPrice": 28390000,
+    "monthly": {
+      "12": 2460000,
+      "24": 1300000,
+      "36": 950000
+    },
+    "contractTotals": {
+      "12": 29520000,
+      "24": 31200000,
+      "36": 34200000
+    },
+    "attributes": {
+      "capacity": "10,5 kg",
+      "size": "60 × 85 × 66 cm",
+      "technology": "DUAL Inverter Heat Pump",
+      "color": "Trắng",
+      "style": "Máy sấy",
+      "widthCm": 60
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "Dryer"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": null,
+        "label": null
+      },
+      "l2": {
+        "id": null,
+        "label": null
+      },
+      "l3": {
+        "id": null,
+        "label": null
+      },
+      "mappingStatus": "draft-unmapped"
+    },
+    "componentCategories": [],
+    "availability": "out-of-stock",
+    "availabilityNote": "Hết hàng trên lg.com/vn",
+    "canRegister": false,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-say-quan-ao/dvhp50w/",
+        "model": "DVHP50W",
+        "priceVnd": 28390000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "fx1414s3ka",
+    "uiCategoryId": "washer",
+    "productNumber": 96,
+    "model": "FX1414S3KA",
+    "modelSuffix": "",
+    "name": "Máy giặt AI DD 14 kg",
+    "subtitle": "Lồng ngang · Đen",
+    "imageKey": "washer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washer"
+    ],
+    "buyPrice": 18690000,
+    "monthly": {
+      "12": 1620000,
+      "24": 860000,
+      "36": 630000
+    },
+    "contractTotals": {
+      "12": 19440000,
+      "24": 20640000,
+      "36": 22680000
+    },
+    "attributes": {
+      "capacity": "14 kg",
+      "size": "60 × 85 × 61,5 cm",
+      "technology": "AI DD 2.0 · Inverter",
+      "color": "Đen",
+      "style": "Lồng ngang",
+      "widthCm": 60
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "F/L"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLFL",
+        "label": "Clothes Washer_Front Loader"
+      },
+      "l3": {
+        "id": "WMWLFLSC",
+        "label": "Clothes Washer_Drum(DD)_Steam_24"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1414s3ka/",
+        "model": "FX1414S3KA",
+        "priceVnd": 18690000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "fx1410n5w",
+    "uiCategoryId": "washer",
+    "productNumber": 97,
+    "model": "FX1410N5W",
+    "modelSuffix": "",
+    "name": "Máy giặt AI DD 10 kg",
+    "subtitle": "Lồng ngang · Trắng",
+    "imageKey": "washer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washer"
+    ],
+    "buyPrice": 10690000,
+    "monthly": {
+      "12": 920000,
+      "24": 490000,
+      "36": 360000
+    },
+    "contractTotals": {
+      "12": 11040000,
+      "24": 11760000,
+      "36": 12960000
+    },
+    "attributes": {
+      "capacity": "10 kg",
+      "size": "60 × 85 × 56,5 cm",
+      "technology": "AI DD · Inverter",
+      "color": "Trắng",
+      "style": "Lồng ngang",
+      "widthCm": 60
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "F/L"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLFL",
+        "label": "Clothes Washer_Front Loader"
+      },
+      "l3": {
+        "id": "WMWLFLSC",
+        "label": "Clothes Washer_Drum(DD)_Steam_24"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-giat-long-ngang/fx1410n5w/",
+        "model": "FX1410N5W",
+        "priceVnd": 10690000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "fb1209s5o",
+    "uiCategoryId": "washer",
+    "productNumber": 98,
+    "model": "FB1209S5O",
+    "modelSuffix": "",
+    "name": "Máy giặt Inverter 9 kg",
+    "subtitle": "Lồng ngang · Đen bóng",
+    "imageKey": "washer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washer"
+    ],
+    "buyPrice": 8490000,
+    "monthly": {
+      "12": 730000,
+      "24": 390000,
+      "36": 290000
+    },
+    "contractTotals": {
+      "12": 8760000,
+      "24": 9360000,
+      "36": 10440000
+    },
+    "attributes": {
+      "capacity": "9 kg",
+      "size": "",
+      "technology": "Inverter",
+      "color": "Đen bóng",
+      "style": "Lồng ngang",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "F/L"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLFL",
+        "label": "Clothes Washer_Front Loader"
+      },
+      "l3": {
+        "id": "WMWLFLSC",
+        "label": "Clothes Washer_Drum(DD)_Steam_24"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-giat-long-ngang/fb1209s5o/",
+        "model": "FB1209S5O",
+        "priceVnd": 8490000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "tx2516dt3o",
+    "uiCategoryId": "washer",
+    "productNumber": 99,
+    "model": "TX2516DT3O",
+    "modelSuffix": "",
+    "name": "Máy giặt AI DD lồng đứng 16 kg",
+    "subtitle": "Lồng đứng · Đen",
+    "imageKey": "washer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washer"
+    ],
+    "buyPrice": 11490000,
+    "monthly": {
+      "12": 990000,
+      "24": 530000,
+      "36": 390000
+    },
+    "contractTotals": {
+      "12": 11880000,
+      "24": 12720000,
+      "36": 14040000
+    },
+    "attributes": {
+      "capacity": "16 kg",
+      "size": "65,1 × 106 × 68 cm",
+      "technology": "AI DD · Inverter",
+      "color": "Đen",
+      "style": "Lồng đứng",
+      "widthCm": 65.1
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "T/L"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLTL",
+        "label": "Clothes Washer_Top Loader"
+      },
+      "l3": {
+        "id": "WMWLTLTA",
+        "label": "Clothes Washer_Turbo Drum"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-giat-long-dung/tx2516dt3o/",
+        "model": "TX2516DT3O",
+        "priceVnd": 11490000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "t2310vbtn",
+    "uiCategoryId": "washer",
+    "productNumber": 100,
+    "model": "T2310VBTN",
+    "modelSuffix": "",
+    "name": "Máy giặt lồng đứng 10 kg",
+    "subtitle": "Lồng đứng · Đen",
+    "imageKey": "washer",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "washer"
+    ],
+    "buyPrice": 8490000,
+    "monthly": {
+      "12": 730000,
+      "24": 390000,
+      "36": 290000
+    },
+    "contractTotals": {
+      "12": 8760000,
+      "24": 9360000,
+      "36": 10440000
+    },
+    "attributes": {
+      "capacity": "10 kg",
+      "size": "59 × 96,5 × 61 cm",
+      "technology": "Inverter",
+      "color": "Đen",
+      "style": "Lồng đứng",
+      "widthCm": 59
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "W/M",
+      "child": "T/L"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "WMWL",
+        "label": "Clothes Washer"
+      },
+      "l2": {
+        "id": "WMWLTL",
+        "label": "Clothes Washer_Top Loader"
+      },
+      "l3": {
+        "id": "WMWLTLTA",
+        "label": "Clothes Washer_Turbo Drum"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/giat-say/may-giat-long-dung/t2310vbtn/",
+        "model": "T2310VBTN",
+        "priceVnd": 8490000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "dd20gmwe1",
+    "uiCategoryId": "dehumidifier",
+    "productNumber": 101,
+    "model": "DD20GMWE1",
+    "modelSuffix": "",
+    "name": "Máy hút ẩm Mojave 34L",
+    "subtitle": "Máy hút ẩm · Dual Inverter",
+    "imageKey": "dehumidifier",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "dehumidifier"
+    ],
+    "buyPrice": 15990000,
+    "monthly": {
+      "12": 1380000,
+      "24": 730000,
+      "36": 540000
+    },
+    "contractTotals": {
+      "12": 16560000,
+      "24": 17520000,
+      "36": 19440000
+    },
+    "attributes": {
+      "capacity": "20 L/ngày",
+      "size": "41 × 64 × 21 cm",
+      "technology": "Dual Inverter",
+      "color": "",
+      "style": "Máy hút ẩm",
+      "widthCm": 41
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Air Care",
+      "child": "Air Care"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": null,
+        "label": null
+      },
+      "l2": {
+        "id": null,
+        "label": null
+      },
+      "l3": {
+        "id": null,
+        "label": null
+      },
+      "mappingStatus": "draft-unmapped"
+    },
+    "componentCategories": [],
+    "availability": "out-of-stock",
+    "availabilityNote": "Hết hàng trên lg.com/vn",
+    "canRegister": false,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/cham-soc-khong-khi/may-hut-am/dd20gmwe1/",
+        "model": "DD20GMWE1",
+        "priceVnd": 15990000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "dd23gmwe1",
+    "uiCategoryId": "dehumidifier",
+    "productNumber": 102,
+    "model": "DD23GMWE1",
+    "modelSuffix": "",
+    "name": "Máy hút ẩm Mojave 40L",
+    "subtitle": "Máy hút ẩm · Dual Inverter",
+    "imageKey": "dehumidifier",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "dehumidifier"
+    ],
+    "buyPrice": 16990000,
+    "monthly": {
+      "12": 1470000,
+      "24": 780000,
+      "36": 570000
+    },
+    "contractTotals": {
+      "12": 17640000,
+      "24": 18720000,
+      "36": 20520000
+    },
+    "attributes": {
+      "capacity": "23 L/ngày",
+      "size": "41 × 64 × 21 cm",
+      "technology": "Dual Inverter",
+      "color": "",
+      "style": "Máy hút ẩm",
+      "widthCm": 41
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Air Care",
+      "child": "Air Care"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": null,
+        "label": null
+      },
+      "l2": {
+        "id": null,
+        "label": null
+      },
+      "l3": {
+        "id": null,
+        "label": null
+      },
+      "mappingStatus": "draft-unmapped"
+    },
+    "componentCategories": [],
+    "availability": "out-of-stock",
+    "availabilityNote": "Hết hàng trên lg.com/vn",
+    "canRegister": false,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/cham-soc-khong-khi/may-hut-am/dd23gmwe1/",
+        "model": "DD23GMWE1",
+        "priceVnd": 16990000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "s30a",
+    "uiCategoryId": "soundbar",
+    "productNumber": 103,
+    "model": "S30A",
+    "modelSuffix": "",
+    "name": "Loa thanh LG S30A",
+    "subtitle": "Loa thanh 2.1",
+    "imageKey": "soundbar",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "soundbar"
+    ],
+    "buyPrice": 3700000,
+    "monthly": {
+      "12": 320000,
+      "24": 170000,
+      "36": 120000
+    },
+    "contractTotals": {
+      "12": 3840000,
+      "24": 4080000,
+      "36": 4320000
+    },
+    "attributes": {
+      "capacity": "",
+      "size": "",
+      "technology": "2.1 kênh · 140 W · WOW Orchestra",
+      "color": "",
+      "style": "Loa thanh",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Audio",
+      "child": "Soundbar"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "AVAH",
+        "label": "HTS"
+      },
+      "l2": {
+        "id": "AVAHHS",
+        "label": "Soundbar + HTS Speaker"
+      },
+      "l3": {
+        "id": "AVAHHSSO",
+        "label": "Soundbar"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/dan-am-thanh/loa-thanh/s30a/",
+        "model": "S30A",
+        "priceVnd": 3700000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "s40t",
+    "uiCategoryId": "soundbar",
+    "productNumber": 104,
+    "model": "S40T",
+    "modelSuffix": "",
+    "name": "Loa thanh LG S40T",
+    "subtitle": "Loa thanh 3.1",
+    "imageKey": "soundbar",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "soundbar"
+    ],
+    "buyPrice": 3000000,
+    "monthly": {
+      "12": 260000,
+      "24": 140000,
+      "36": 100000
+    },
+    "contractTotals": {
+      "12": 3120000,
+      "24": 3360000,
+      "36": 3600000
+    },
+    "attributes": {
+      "capacity": "",
+      "size": "",
+      "technology": "3.1 kênh · 300 W · Dolby Audio · Bluetooth 5.3",
+      "color": "",
+      "style": "Loa thanh",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Audio",
+      "child": "Soundbar"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "AVAH",
+        "label": "HTS"
+      },
+      "l2": {
+        "id": "AVAHHS",
+        "label": "Soundbar + HTS Speaker"
+      },
+      "l3": {
+        "id": "AVAHHSSO",
+        "label": "Soundbar"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/dan-am-thanh/loa-thanh/s40t/",
+        "model": "S40T",
+        "priceVnd": 3000000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "s60t",
+    "uiCategoryId": "soundbar",
+    "productNumber": 105,
+    "model": "S60T",
+    "modelSuffix": "",
+    "name": "Loa thanh LG S60T",
+    "subtitle": "Loa thanh 3.1",
+    "imageKey": "soundbar",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "soundbar"
+    ],
+    "buyPrice": 4500000,
+    "monthly": {
+      "12": 390000,
+      "24": 210000,
+      "36": 150000
+    },
+    "contractTotals": {
+      "12": 4680000,
+      "24": 5040000,
+      "36": 5400000
+    },
+    "attributes": {
+      "capacity": "",
+      "size": "",
+      "technology": "3.1 kênh · 340 W · Dolby Audio · Bluetooth 5.3",
+      "color": "",
+      "style": "Loa thanh",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Audio",
+      "child": "Soundbar"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "AVAH",
+        "label": "HTS"
+      },
+      "l2": {
+        "id": "AVAHHS",
+        "label": "Soundbar + HTS Speaker"
+      },
+      "l3": {
+        "id": "AVAHHSSO",
+        "label": "Soundbar"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/dan-am-thanh/loa-thanh/s60t/",
+        "model": "S60T",
+        "priceVnd": 4500000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "s70ty",
+    "uiCategoryId": "soundbar",
+    "productNumber": 106,
+    "model": "S70TY",
+    "modelSuffix": "",
+    "name": "Loa thanh LG S70TY",
+    "subtitle": "Loa thanh 3.1.1",
+    "imageKey": "soundbar",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "soundbar"
+    ],
+    "buyPrice": 4700000,
+    "monthly": {
+      "12": 410000,
+      "24": 220000,
+      "36": 160000
+    },
+    "contractTotals": {
+      "12": 4920000,
+      "24": 5280000,
+      "36": 5760000
+    },
+    "attributes": {
+      "capacity": "",
+      "size": "",
+      "technology": "3.1.1 kênh · 400 W · Dolby Atmos",
+      "color": "",
+      "style": "Loa thanh",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Audio",
+      "child": "Soundbar"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "AVAH",
+        "label": "HTS"
+      },
+      "l2": {
+        "id": "AVAHHS",
+        "label": "Soundbar + HTS Speaker"
+      },
+      "l3": {
+        "id": "AVAHHSSO",
+        "label": "Soundbar"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/dan-am-thanh/loa-thanh/s70ty/",
+        "model": "S70TY",
+        "priceVnd": 4700000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "grab",
+    "uiCategoryId": "speaker",
+    "productNumber": 107,
+    "model": "GRAB",
+    "modelSuffix": "",
+    "name": "Loa xboom Grab",
+    "subtitle": "Loa xboom",
+    "imageKey": "speaker",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "speaker"
+    ],
+    "buyPrice": 2700000,
+    "monthly": {
+      "12": 230000,
+      "24": 120000,
+      "36": 90000
+    },
+    "contractTotals": {
+      "12": 2760000,
+      "24": 2880000,
+      "36": 3240000
+    },
+    "attributes": {
+      "capacity": "",
+      "size": "",
+      "technology": "xboom · 20 W + 10 W · pin sạc",
+      "color": "",
+      "style": "xboom",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Audio",
+      "child": "xboom"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "AOAA",
+        "label": "Home Audio_OS"
+      },
+      "l2": {
+        "id": "AOAADS",
+        "label": "Wireless Speaker_OS"
+      },
+      "l3": {
+        "id": "AOAADSPS",
+        "label": "Bluetooth Speaker_OS"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/dan-am-thanh/loa-bluetooth/grab/",
+        "model": "GRAB",
+        "priceVnd": 2700000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
+  },
+  {
+    "id": "bounce",
+    "uiCategoryId": "speaker",
+    "productNumber": 108,
+    "model": "BOUNCE",
+    "modelSuffix": "",
+    "name": "Loa xboom Bounce",
+    "subtitle": "Loa xboom",
+    "imageKey": "speaker",
+    "imageIsIllustrative": true,
+    "galleryKeys": [
+      "speaker"
+    ],
+    "buyPrice": 3800000,
+    "monthly": {
+      "12": 330000,
+      "24": 170000,
+      "36": 130000
+    },
+    "contractTotals": {
+      "12": 3960000,
+      "24": 4080000,
+      "36": 4680000
+    },
+    "attributes": {
+      "capacity": "",
+      "size": "",
+      "technology": "xboom · 30 W + 5 W x 2 · pin sạc",
+      "color": "",
+      "style": "xboom",
+      "widthCm": null
+    },
+    "features": [],
+    "sourceCategory": {
+      "parent": "Audio",
+      "child": "xboom"
+    },
+    "canonicalCategory": {
+      "l1": {
+        "id": "AOAA",
+        "label": "Home Audio_OS"
+      },
+      "l2": {
+        "id": "AOAADS",
+        "label": "Wireless Speaker_OS"
+      },
+      "l3": {
+        "id": "AOAADSPS",
+        "label": "Bluetooth Speaker_OS"
+      },
+      "mappingStatus": "draft-copied-from-sibling"
+    },
+    "componentCategories": [],
+    "availability": "listed",
+    "availabilityNote": "",
+    "canRegister": true,
+    "source": {
+      "workbook": null,
+      "draft": true,
+      "lgCom": {
+        "url": "https://www.lg.com/vn/dan-am-thanh/loa-bluetooth/bounce/",
+        "model": "BOUNCE",
+        "priceVnd": 3800000,
+        "fetched": "2026-10-14",
+        "note": "Giá niêm yết lg.com/vn; gói thuê ước tính theo tỷ lệ trung vị của file Excel (x1,038 / x1,099 / x1,210 cho 12/24/36 tháng)"
+      }
+    },
+    "draft": true
   }
 ];

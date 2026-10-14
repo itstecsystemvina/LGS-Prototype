@@ -76,7 +76,7 @@ for filename, route in routes.items():
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#a50034">
+<meta name="theme-color" content="#fd312e">
 <meta name="description" content="LG Subscribe MiniApp — bản xem trước thiết kế dành cho điện thoại.">
 <title>LG Subscribe · MiniApp</title>
 <style>{fonts}\n{css}</style>
