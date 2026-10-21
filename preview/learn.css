@@ -1,0 +1,79 @@
+/* Tìm hiểu LG Subscribe + Gói của tôi (đang sử dụng) */
+.learn-hero{position:relative;overflow:hidden;min-height:190px;margin:0 16px;padding:20px 18px 40px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#fd312e 0%,#d41f33 55%,#a50034 100%)}
+.learn-hero .eyebrow{opacity:.9}
+.learn-hero h2{font-size:27px;line-height:1.08;letter-spacing:-.7px;margin:8px 0 14px;font-weight:700}
+.learn-hero-copy{position:relative;z-index:2;max-width:60%}
+.learn-hero-tags{display:flex;flex-wrap:wrap;gap:6px}
+.learn-hero-tags span{font-size:10px;font-weight:600;padding:5px 9px;border-radius:99px;background:#ffffff2b}
+.learn-hero-art{position:absolute;right:14px;bottom:34px;width:38%;height:118px;display:flex;align-items:center;justify-content:center;background:#fff;border-radius:18px;padding:8px 4px}
+.learn-hero-art img{width:50%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.learn-intro{position:relative;margin:-14px 28px 0;padding:15px 16px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 24px #0000001a;z-index:3}
+.learn-intro p{font-size:12px;line-height:1.55;color:var(--muted);text-align:left}
+.learn-intro .learn-lead{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.learn-list{display:grid;gap:10px;padding:18px 16px 4px}
+.learn-row{display:flex;align-items:center;gap:14px;width:100%;min-height:74px;padding:14px;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px}
+.learn-row:active{background:var(--soft)}
+.learn-row>svg:last-child{margin-left:auto;width:16px;height:16px;color:var(--heritage)}
+.learn-ico{width:44px;height:44px;border-radius:12px;background:var(--red-soft);color:var(--heritage);display:grid;place-items:center;flex:none}
+.learn-copy{display:grid;gap:3px;min-width:0}
+.learn-copy strong{font-size:14px;line-height:1.25}
+.learn-copy small{font-size:11px;color:var(--muted);line-height:1.35}
+.learn-cta{display:grid;gap:10px;margin-top:16px}
+.learn-link{justify-content:center;width:100%;margin-top:6px}
+.care-hero{margin:0 16px 18px;padding:20px 14px 14px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#fd312e 0%,#c4162a 60%,#a50034 100%)}
+.care-hero .eyebrow{opacity:.9;padding:0 4px}
+.care-hero h2{font-size:22px;line-height:1.15;letter-spacing:-.5px;margin:8px 4px 16px;max-width:90%}
+.care-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.care-stat{background:#fff;color:var(--ink);border-radius:14px;padding:11px 9px 12px;display:grid;gap:3px;align-content:start}
+.care-stat svg{width:18px;height:18px;color:var(--muted)}
+.care-stat strong{font-size:20px;color:var(--heritage);letter-spacing:-.5px;margin-top:3px}
+.care-stat span{font-size:10px;line-height:1.35;color:var(--muted)}
+.step-list{list-style:none;margin:6px 20px 0;padding:0}
+.step-list li{display:flex;gap:14px;position:relative;padding-bottom:22px}
+.step-list li:not(:last-child)::before{content:'';position:absolute;left:15px;top:34px;bottom:2px;width:1px;background:var(--line)}
+.step-no{width:31px;height:31px;border-radius:50%;background:var(--red-soft);color:var(--heritage);font-weight:700;font-size:13px;display:grid;place-items:center;flex:none}
+.step-list h3{font-size:14px;margin-top:5px}
+.step-list p{font-size:12px;line-height:1.5;color:var(--muted);margin-top:4px}
+.demo-bar{margin:0 20px 14px;padding:10px 12px 12px;border:1px dashed #cfc9bf;border-radius:14px;background:var(--soft)}
+.demo-bar>span{display:block;font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.demo-chips{display:flex;flex-wrap:wrap;gap:6px}
+.demo-chips button{font-size:11px;font-weight:500;padding:7px 11px;min-height:34px;border-radius:99px;border:1px solid var(--line);background:#fff}
+.demo-chips button[aria-pressed=true]{background:var(--heritage);border-color:var(--heritage);color:#fff;font-weight:600}
+.active-card .mini-product{margin:0}
+.pay-block{padding:14px 14px 4px}
+.pay-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.status-chip{font-size:11px;font-weight:600;padding:5px 10px;border-radius:99px}
+.status-chip.live{background:#fff3df;color:#9a5b00}
+.status-chip.done{background:#e6f6ec;color:#17794a}
+.pay-count{font-size:12px;font-weight:600}
+.progress{height:8px;background:var(--soft);border-radius:99px;overflow:hidden}
+.progress span{display:block;height:100%;background:var(--heritage);border-radius:99px}
+.is-paid .progress span{background:#1f9d62}
+.pay-meta{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:8px;margin:14px 0 10px}
+.pay-meta dt{font-size:10px;color:var(--muted)}
+.pay-meta dd{font-size:13px;font-weight:700;margin:3px 0 0}
+.pay-meta small{display:block;font-size:10px;color:var(--muted);margin-top:2px}
+.pay-note{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.5;margin:12px 0 8px;color:#17794a}
+.pay-note svg{width:18px;height:18px;margin-top:1px}
+.care-block{margin:6px 14px 0;padding:12px 0 0;border-top:1px solid var(--line)}
+.care-line{display:flex;gap:10px;align-items:flex-start}
+.care-line svg{width:20px;height:20px;color:var(--heritage);margin-top:1px}
+.care-line strong{display:block;font-size:12px}
+.care-line span{display:block;font-size:11px;color:var(--muted);margin-top:3px}
+.card-actions{display:grid;gap:8px;padding:14px}
+.card-actions .primary,.card-actions .secondary{min-height:46px;font-size:13px}
+.card-actions .row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.card-actions .row .secondary{font-size:12px;padding:10px 8px}
+.learn-cta a.primary,.learn-cta a.secondary,.card-actions a{text-decoration:none}
+.pay-list{list-style:none;margin:6px 0 0;padding:0}
+.pay-list li{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.pay-dot{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;flex:none}
+.pay-dot svg{width:13px;height:13px;stroke-width:3;color:#fff}
+.pay-list .paid .pay-dot{background:#1f9d62;border-color:#1f9d62}
+.pay-list .next .pay-dot{border-color:var(--heritage);box-shadow:0 0 0 3px var(--red-soft)}
+.pay-term{font-size:13px;font-weight:600}
+.pay-term small,.pay-amount small{display:block;font-size:10px;font-weight:400;color:var(--muted);margin-top:2px}
+.pay-amount{margin-left:auto;text-align:right;font-size:13px;font-weight:600}
+.pay-list .later{opacity:.55}
+.pay-list .next .pay-amount small{color:var(--heritage);font-weight:600}
+@media (max-width:360px){.pay-meta{grid-template-columns:1fr 1fr}.care-stat strong{font-size:17px}.learn-hero h2{font-size:23px}}

@@ -49,7 +49,7 @@ for weight, filename in [(400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (
         font.save(output)
     fonts += "@font-face{font-family:'Montserrat';font-style:normal;font-weight:" + str(weight) + ";font-display:swap;src:url('" + data_uri(output, 'font/woff') + "') format('woff')}\n"
 
-css = '\n'.join((ROOT / filename).read_text() for filename in ('miniapp.css', 'flow.css', 'consultation.css'))
+css = '\n'.join((ROOT / filename).read_text() for filename in ('miniapp.css', 'flow.css', 'consultation.css', 'learn.css', 'frame.css'))
 data = (ROOT / 'catalog-data.js').read_text()
 if (ROOT / 'catalog-full.js').exists():
     full = (ROOT / 'catalog-full.js').read_text()
@@ -83,9 +83,14 @@ for filename, route in routes.items():
 </head>
 <body>
 <script type="text/plain" id="font-license">{font_license}</script>
-<div class="app" id="app"></div>
+<div class="stage"><div class="phone" id="phone">
+<div class="statusbar" aria-hidden="true"><span id="sb-time">9:41</span><span class="sb-icons"><svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg><svg class="sb-wifi" viewBox="0 0 17 12"><path d="M1 4.3a10 10 0 0 1 15 0"/><path d="M3.6 7a6.3 6.3 0 0 1 9.8 0"/><circle class="dot" cx="8.5" cy="10" r="1.6"/></svg><span class="batt"><i></i></span></span></div>
+<span class="island" aria-hidden="true"></span>
+<div class="phone-screen" id="phone-screen"><div class="app" id="app"></div></div>
 <div class="overlay" id="sheet-root" hidden></div>
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<span class="home-indicator" aria-hidden="true"></span>
+</div></div>
 <aside class="preview-ribbon"><strong>LG Subscribe</strong>Showroom direction · v3<br>Montserrat · LG brand palette</aside>
 <noscript><p style="padding:24px;text-align:center">Bật JavaScript để trải nghiệm bản xem trước MiniApp.</p></noscript>
 <script>window.LG_ASSETS={json.dumps(assets, ensure_ascii=False)};window.LG_DEFAULT_ROUTE={json.dumps(route)};</script>
