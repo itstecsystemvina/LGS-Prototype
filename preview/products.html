@@ -547,18 +547,49 @@ small {
   color: var(--muted)
 }
 
-.campaign-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 52px;
-  padding: 0 20px;
-  border-bottom: 1px solid var(--line)
+.hero-wrap {
+  position: relative
 }
 
 .pagination {
+  position: absolute;
+  left: 12px;
+  bottom: 62px;
+  z-index: 4;
   display: flex;
   gap: 0
+}
+
+.subscribe-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 52px;
+  padding: 0 20px;
+  background: var(--heritage);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: left
+}
+
+.subscribe-ribbon .ribbon-sub {
+  flex: 1;
+  min-width: 0;
+  font-size: 10px;
+  font-weight: 500;
+  opacity: .85;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.subscribe-ribbon svg {
+  width: 17px;
+  height: 17px;
+  margin-left: auto;
+  flex: none
 }
 
 .dot-button {
@@ -579,29 +610,6 @@ small {
 .dot-button[aria-pressed=true] span {
   width: 28px;
   background: var(--heritage)
-}
-
-.reassurance {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 13px 20px;
-  background: var(--soft);
-  font-size: 11px;
-  color: var(--muted)
-}
-
-.reassurance span {
-  display: flex;
-  align-items: center;
-  gap: 6px
-}
-
-.reassurance svg {
-  width: 16px;
-  height: 16px;
-  color: var(--heritage)
 }
 
 /* Product types are the customer-facing entry points. */
@@ -2515,12 +2523,6 @@ small {
 
   .category-switch {
     font-size: 12px
-  }
-
-  .reassurance {
-    padding-left: 16px;
-    padding-right: 16px;
-    font-size: 10px
   }
 
   .nav-button {
@@ -13896,7 +13898,7 @@ function pageTop(title,desc='',back=null){return `<div class="page-top">${back?`
 const campaigns=[{title:'Nhẹ mỗi tháng.<br>Trọn tiện nghi.',desc:'Máy giặt LG AI DD',price:byId('washer').monthly[36],image:'washer',label:'AI DD · '+byId('washer').attributes.capacity,cta:'Khám phá máy giặt',route:'/product/washer',className:'',kicker:'Sống thảnh thơi cùng LG'},{title:'Màn hình lớn.<br>Niềm vui lớn.',desc:'TV LG QNED evo 86 inch',price:byId('tv').monthly[36],image:'tv',label:'QNED evo · 4K',cta:'Khám phá TV',route:'/product/tv',className:'promo-tv',kicker:'Nâng tầm giải trí tại nhà'},{title:'Không khí sạch.<br>Nhà an lành.',desc:'LG PuriCare 360 HIT',price:byId('air').monthly[36],image:'air',label:'PuriCare · '+byId('air').attributes.capacity,cta:'Xem máy lọc khí',route:'/product/air',className:'promo-air',kicker:'Chăm chút không gian sống'}];
 function hero(){const c=campaigns[state.campaign];return `<section class="hero ${c.className}" aria-label="Chiến dịch ${state.campaign+1} trong 3"><div class="hero-content"><div class="eyebrow"><span class="brand-mark"></span>${c.kicker}</div><h1>${c.title}</h1><p class="hero-desc">${c.desc}</p><div class="hero-price"><small>Từ</small> ${money(c.price)}<small>/tháng*</small></div><button class="hero-cta" data-go="${c.route}">${c.cta}${icon('arrow')}</button><span class="hero-term">Gói 36 tháng</span></div><div class="hero-scene"><span class="hero-stage" aria-hidden="true"></span><img src="${ASSETS[c.image]}" alt="${escape(c.desc)}"><span class="hero-product-label">${c.label}</span></div><span class="hero-signature" aria-hidden="true">Life’s Good.</span></section>`}
 function productCard(p){return `<article class="product-card"><div class="product-visual">${p.attributes.capacity?`<span class="product-tag">${escape(p.attributes.capacity)}</span>`:''}<button class="product-open" data-product="${p.id}" aria-label="Xem ${escape(p.name)}"><img src="${ASSETS[p.imageKey]}" alt="${escape(p.name)}" loading="lazy"></button>${p.imageIsIllustrative?'<span class="image-disclaimer">Hình minh họa</span>':''}<button class="heart-button" data-save="${p.id}" aria-pressed="${state.saved.includes(p.id)}" aria-label="${state.saved.includes(p.id)?'Bỏ lưu':'Lưu'} ${escape(p.name)}">${icon('heart')}</button></div><button class="product-copy" data-product="${p.id}" aria-label="Chi tiết ${escape(p.name)}, từ ${money(p.monthly[36])} mỗi tháng, gói 36 tháng"><h3>${escape(p.name)}</h3><p class="product-spec">${escape(p.attributes.style||p.subtitle)}</p><div class="model">${escape(p.model)}${p.draft?' · Bản nháp':''}</div>${p.canRegister===false?'<p class="availability-label">'+escape(statusLabel(p))+'</p>':''}<div class="card-price-label">Từ / tháng</div><div class="price">${money(p.monthly[36])}</div><p class="term-note">36 tháng · Tổng ${money(p.monthly[36]*36)}</p><span class="card-link">Xem chi tiết ${icon('arrow')}</span></button><div class="product-card-actions"><button class="primary" data-buy="${p.id}" data-card-buy="true" aria-label="Mua ${escape(p.name)}" ${p.canRegister===false?'disabled':''}>${p.canRegister===false?'Tạm chưa nhận đơn':'Mua'} ${icon('arrow')}</button></div></article>`}
-function home(){return `<main class="screen home-screen" id="main"><div class="hero-wrap"><div id="hero-slot">${hero()}</div><div class="campaign-controls"><div class="pagination" aria-label="Chọn banner">${campaigns.map((c,i)=>`<button class="dot-button" data-campaign="${i}" aria-label="Banner ${i+1}: ${c.desc}" aria-pressed="${state.campaign===i}"><span></span></button>`).join('')}</div><button class="text-button" data-action="campaign-info">Về LG Subscribe ${icon('arrow')}</button></div></div><div class="reassurance"><span>${icon('calendar')}12 / 24 / 36 tháng</span><span>${icon('tool')}Chăm sóc theo gói</span></div><section class="category-home"><div class="section-heading"><div><p class="section-kicker">Cho ngôi nhà bạn</p><h2>Tìm đúng thiết bị</h2></div><button class="text-button" data-action="category-picker" aria-haspopup="dialog">13 loại ${icon('grid')}</button></div><div class="category-grid">${CATEGORIES.slice(0,7).map(c=>`<button class="category-tile" data-category="${c.id}" aria-label="Xem ${escape(c.label)}"><span class="category-visual ${c.id}"><img src="${ASSETS[c.id]}" alt=""></span><span>${escape(c.shortLabel)}</span></button>`).join('')}<button class="category-tile" data-action="category-picker" aria-label="Xem tất cả loại sản phẩm"><span class="category-visual all">${icon('grid')}</span><span>Tất cả</span></button></div></section><section class="campaign-small"><div class="campaign-small-copy"><div class="eyebrow">Thêm thời gian cho bạn</div><h2>Bếp sạch.<br>Việc nhà nhẹ tênh.</h2><p>LG QuadWash · 14 bộ</p><button class="text-button" data-category="dish">Khám phá máy rửa bát ${icon('arrow')}</button></div><div class="small-stage"><img src="${ASSETS.dish}" alt="Máy rửa bát LG QuadWash"></div></section><section class="featured"><div class="section-heading"><div><p class="section-kicker">Bắt đầu từ điều bạn thích</p><h2>Gợi ý cho tổ ấm</h2></div><button class="text-button" data-category="all" aria-label="Xem tất cả sản phẩm">Tất cả ${icon('arrow')}</button></div><div class="product-grid">${['fridge','washer','dish','air'].map(id=>productCard(byId(id))).join('')}</div></section>${consultationPanel()}<section class="benefits"><p class="section-kicker">LG Subscribe</p><h2>Tiện nghi, theo cách của bạn.</h2><div class="benefit-grid"><div><span class="benefit-number">01</span><div><h3>Chọn thiết bị</h3><p>Tìm sản phẩm vừa nhu cầu.</p></div>${icon('grid')}</div><div><span class="benefit-number">02</span><div><h3>Chọn kỳ hạn</h3><p>Xem giá tháng và tổng chi phí.</p></div>${icon('calendar')}</div><div><span class="benefit-number">03</span><div><h3>Để LG đồng hành</h3><p>Mua sản phẩm và chọn giao lắp.</p></div>${icon('chat')}</div></div><button class="text-button" data-go="/learn/how">Tìm hiểu cách mua hàng ${icon('arrow')}</button></section><p class="footnote">*Giá minh họa theo gói 36 tháng. Nội dung chiến dịch là ý tưởng cho bản xem trước.</p></main>${nav('home')}`}
+function home(){return `<main class="screen home-screen" id="main"><div class="hero-wrap"><div id="hero-slot">${hero()}</div><div class="pagination" aria-label="Chọn banner">${campaigns.map((c,i)=>`<button class="dot-button" data-campaign="${i}" aria-label="Banner ${i+1}: ${c.desc}" aria-pressed="${state.campaign===i}"><span></span></button>`).join('')}</div><button class="subscribe-ribbon" data-action="campaign-info"><span>Tìm hiểu về LG Subscribe</span>${icon('arrow')}</button></div><section class="category-home"><div class="section-heading"><div><p class="section-kicker">Cho ngôi nhà bạn</p><h2>Tìm đúng thiết bị</h2></div><button class="text-button" data-action="category-picker" aria-haspopup="dialog">13 loại ${icon('grid')}</button></div><div class="category-grid">${CATEGORIES.slice(0,7).map(c=>`<button class="category-tile" data-category="${c.id}" aria-label="Xem ${escape(c.label)}"><span class="category-visual ${c.id}"><img src="${ASSETS[c.id]}" alt=""></span><span>${escape(c.shortLabel)}</span></button>`).join('')}<button class="category-tile" data-action="category-picker" aria-label="Xem tất cả loại sản phẩm"><span class="category-visual all">${icon('grid')}</span><span>Tất cả</span></button></div></section><section class="campaign-small"><div class="campaign-small-copy"><div class="eyebrow">Thêm thời gian cho bạn</div><h2>Bếp sạch.<br>Việc nhà nhẹ tênh.</h2><p>LG QuadWash · 14 bộ</p><button class="text-button" data-category="dish">Khám phá máy rửa bát ${icon('arrow')}</button></div><div class="small-stage"><img src="${ASSETS.dish}" alt="Máy rửa bát LG QuadWash"></div></section><section class="featured"><div class="section-heading"><div><p class="section-kicker">Bắt đầu từ điều bạn thích</p><h2>Gợi ý cho tổ ấm</h2></div><button class="text-button" data-category="all" aria-label="Xem tất cả sản phẩm">Tất cả ${icon('arrow')}</button></div><div class="product-grid">${['fridge','washer','dish','air'].map(id=>productCard(byId(id))).join('')}</div></section>${consultationPanel()}</main>${nav('home')}`}
 function normalize(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d')}
 const SUBTYPE_ORDER=['UHD','QNED','MRGB','OLED','Lifestyle','T/F','B/F','F/D','SXS','RAC BD','F/L','T/L'],SUBTYPE_CATS=['tv','fridge','ac','washer'],SIZE_DIGITS={tv:/^\d+/,ac:/\d{2}/,dehumidifier:/\d{2}/,soundbar:/\d{2,3}/,speaker:/\d{2,3}/};
 function sizeKey(p){const m=p.uiCategoryId==='ac'?null:String((p.attributes||{}).capacity||'').replace(',','.').match(/[\d.]+/);if(m)return parseFloat(m[0]);const d=SIZE_DIGITS[p.uiCategoryId]&&String(p.model).match(SIZE_DIGITS[p.uiCategoryId]);return d?parseFloat(d[0]):Infinity}
