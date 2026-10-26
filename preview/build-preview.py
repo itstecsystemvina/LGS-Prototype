@@ -7,17 +7,15 @@ import re
 ROOT = Path(__file__).resolve().parent
 ASSET_DIR = ROOT / 'assets'
 ASSET_DIR.mkdir(exist_ok=True)
-asset_map = {p.stem: str(p) for p in ASSET_DIR.iterdir() if p.suffix in ('.avif', '.webp', '.jpg')}
+asset_map = {p.stem: str(p) for p in ASSET_DIR.iterdir() if p.suffix in ('.avif', '.webp', '.jpg', '.png')}
 
 def data_uri(path, mime):
     return 'data:' + mime + ';base64,' + base64.b64encode(Path(path).read_bytes()).decode()
 
 assets = {}
 for key, path in asset_map.items():
-    mime = 'image/avif' if path.endswith('.avif') else 'image/webp' if path.endswith('.webp') else 'image/jpeg'
+    mime = 'image/avif' if path.endswith('.avif') else 'image/webp' if path.endswith('.webp') else 'image/png' if path.endswith('.png') else 'image/jpeg'
     assets[key] = data_uri(path, mime)
-    local = ASSET_DIR / (key + ('.avif' if mime == 'image/avif' else '.webp' if mime == 'image/webp' else '.jpg'))
-    local.write_bytes(Path(path).read_bytes())
 
 # Code-native product illustrations for categories without supplied photos.
 illustrations = {

@@ -27,7 +27,7 @@ window.LG_CATEGORIES = [
   {
     "id": "dish",
     "label": "Máy rửa bát",
-    "shortLabel": "Rửa bát",
+    "shortLabel": "Máy rửa bát",
     "filterLabel": "Số bộ chén đĩa",
     "icon": "dish",
     "hint": "Chọn theo sức chứa và công nghệ rửa"
@@ -43,7 +43,7 @@ window.LG_CATEGORIES = [
   {
     "id": "air",
     "label": "Máy lọc không khí",
-    "shortLabel": "Lọc không khí",
+    "shortLabel": "Máy lọc không khí",
     "filterLabel": "Diện tích phục vụ",
     "icon": "air",
     "hint": "Chọn theo diện tích phòng và bộ lọc"
