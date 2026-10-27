@@ -728,7 +728,7 @@ small {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px 12px
+  gap: 12px
 }
 
 .product-card {
@@ -866,6 +866,9 @@ small {
 }
 
 .card-link {
+  width: 100%;
+  padding: 0;
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2472,7 +2475,7 @@ small {
   }
 
   .product-grid {
-    gap: 24px 10px
+    gap: 10px
   }
 
   .product-copy h3 {
@@ -2544,12 +2547,29 @@ small {
 .choice {
   scroll-margin-block: 90px
 }
-/* Promotions: small box under each product card, full list on detail. */
+/* Product cards are bordered cells. Rows: visual, copy, promo box, details link, buy.
+   Rows are placed explicitly so a card without a promo keeps its buttons level with its neighbour.
+   The full promo list is on the detail page. */
 .product-grid .product-card {
   display: grid;
-  grid-row: span 4;
+  grid-row: span 5;
   grid-template-rows: subgrid;
-  row-gap: 0
+  row-gap: 0;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px
+}
+
+.product-grid .product-card>.promo-box {
+  grid-row: 3
+}
+
+.product-grid .product-card>.card-link {
+  grid-row: 4
+}
+
+.product-grid .product-card>.product-card-actions {
+  grid-row: 5
 }
 
 .product-grid .product-card .product-copy {
