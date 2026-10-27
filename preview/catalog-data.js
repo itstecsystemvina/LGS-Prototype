@@ -712,3 +712,37 @@ window.LG_CATALOG_DATA = [
     }
   }
 ];
+/* Sample promotions (design concept, not real offers). "categories" lists UI category ids, or "all". "image" is an optional asset key shown on the product detail screen. */
+window.LG_PROMOTIONS = [
+  {
+    "id": "free-install",
+    "categories": "all",
+    "text": "Miễn phí giao hàng & lắp đặt",
+    "detail": "Áp dụng cho mọi gói LG Subscribe đặt trong tháng 11/2026."
+  },
+  {
+    "id": "first-month",
+    "categories": "all",
+    "text": "Giảm 50% tháng đầu gói 36 tháng",
+    "detail": "Trừ trực tiếp vào kỳ thanh toán đầu tiên. Đến 30/11/2026.",
+    "image": "promo-first-month"
+  },
+  {
+    "id": "ac-clean",
+    "categories": ["ac"],
+    "text": "Tặng 2 lần vệ sinh máy lạnh mỗi năm",
+    "detail": "Kỹ thuật viên LG thực hiện tại nhà trong suốt thời hạn gói."
+  },
+  {
+    "id": "washer-detergent",
+    "categories": ["washer", "dish"],
+    "text": "Tặng bộ chất tẩy rửa 6 tháng",
+    "detail": "Giao kèm sản phẩm khi lắp đặt."
+  },
+  {
+    "id": "air-filter",
+    "categories": ["air"],
+    "text": "Tặng 1 bộ lọc thay thế",
+    "detail": "Gửi tới nhà vào tháng thứ 12 của gói."
+  }
+];

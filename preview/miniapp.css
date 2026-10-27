@@ -2544,3 +2544,60 @@ small {
 .choice {
   scroll-margin-block: 90px
 }
+/* Promotions: small box under each product card, full list on detail. */
+.product-grid .product-card {
+  display: grid;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
+  row-gap: 0
+}
+
+.product-grid .product-card .product-copy {
+  align-self: start
+}
+
+.promo-box {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-top: 10px;
+  padding: 9px 10px;
+  background: var(--red-soft);
+  border-radius: 8px;
+  color: var(--heritage)
+}
+
+.promo-box svg {
+  width: 16px;
+  height: 16px;
+  margin-top: 1px
+}
+
+.promo-box p {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0
+}
+
+.promo-box small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 2px
+}
+
+.promo-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 6px
+}
+
+.promo-note {
+  font-size: 10px;
+  color: var(--muted);
+  margin-top: 14px;
+  line-height: 1.6
+}

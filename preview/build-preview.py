@@ -7,14 +7,14 @@ import re
 ROOT = Path(__file__).resolve().parent
 ASSET_DIR = ROOT / 'assets'
 ASSET_DIR.mkdir(exist_ok=True)
-asset_map = {p.stem: str(p) for p in ASSET_DIR.iterdir() if p.suffix in ('.avif', '.webp', '.jpg', '.png')}
+asset_map = {p.stem: str(p) for p in ASSET_DIR.iterdir() if p.suffix in ('.avif', '.webp', '.jpg', '.png') or p.name.startswith('promo-')}
 
 def data_uri(path, mime):
     return 'data:' + mime + ';base64,' + base64.b64encode(Path(path).read_bytes()).decode()
 
 assets = {}
 for key, path in asset_map.items():
-    mime = 'image/avif' if path.endswith('.avif') else 'image/webp' if path.endswith('.webp') else 'image/png' if path.endswith('.png') else 'image/jpeg'
+    mime = 'image/svg+xml' if path.endswith('.svg') else 'image/avif' if path.endswith('.avif') else 'image/webp' if path.endswith('.webp') else 'image/png' if path.endswith('.png') else 'image/jpeg'
     assets[key] = data_uri(path, mime)
 
 # Code-native product illustrations for categories without supplied photos.
@@ -57,10 +57,14 @@ if (ROOT / 'catalog-full.js').exists():
     for product in records:
         used.add(product['imageKey'])
         used.update(product['galleryKeys'])
+    promos = re.search(r'window.LG_PROMOTIONS\s*=\s*(\[[\s\S]*?\]);', data)
+    if promos:
+        used.update(promo['image'] for promo in json.loads(promos.group(1)) if promo.get('image'))
     assets = {key: value for key, value in assets.items() if key in used}
 js = (ROOT / 'miniapp.js').read_text()
 font_license = (ASSET_DIR / 'Montserrat-OFL.txt').read_text()
 routes = {
+    'index.html': '/home',
     'home.html': '/home',
     'products.html': '/products',
     'product.html': '/product/dish',
