@@ -1,4 +1,4 @@
-"""Build offline, self-contained HTML previews. Source files remain editable."""
+"""Build offline HTML previews (images inlined, fonts loaded from assets/). Source files remain editable."""
 from pathlib import Path
 import base64
 import json
@@ -31,7 +31,7 @@ for key, shapes in illustrations.items():
     (ASSET_DIR / (key + '.svg')).write_text(svg)
     assets[key] = 'data:image/svg+xml;base64,' + base64.b64encode(svg.encode()).decode()
 
-fonts = ''
+font_files = []
 for weight, filename in [(400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (700, 'Bold')]:
     output = ASSET_DIR / f'montserrat-{weight}.woff'
     if not output.exists():
@@ -45,7 +45,10 @@ for weight, filename in [(400, 'Regular'), (500, 'Medium'), (600, 'SemiBold'), (
         subset.subset(font)
         font.flavor = 'woff'
         font.save(output)
-    fonts += "@font-face{font-family:'Montserrat';font-style:normal;font-weight:" + str(weight) + ";font-display:swap;src:url('" + data_uri(output, 'font/woff') + "') format('woff')}\n"
+    font_files.append((weight, output.name))
+
+def font_faces(asset_path):
+    return ''.join(f"@font-face{{font-family:'Montserrat';font-style:normal;font-weight:{weight};font-display:swap;src:url('{asset_path}{name}') format('woff')}}\n" for weight, name in font_files)
 
 css = '\n'.join((ROOT / filename).read_text() for filename in ('miniapp.css', 'flow.css', 'consultation.css', 'learn.css', 'frame.css'))
 data = (ROOT / 'catalog-data.js').read_text()
@@ -72,8 +75,8 @@ routes = {
     'consultation.html': '/consult/dish',
     'subscribe.html': '/checkout/dish?step=1',
 }
-for filename, route in routes.items():
-    html = f'''<!doctype html>
+def render(route, asset_path):
+    return f'''<!doctype html>
 <html lang="vi">
 <head>
 <meta charset="utf-8">
@@ -81,7 +84,7 @@ for filename, route in routes.items():
 <meta name="theme-color" content="#fd312e">
 <meta name="description" content="LG Subscribe MiniApp — bản xem trước thiết kế dành cho điện thoại.">
 <title>LG Subscribe · MiniApp</title>
-<style>{fonts}\n{css}</style>
+<style>{font_faces(asset_path)}\n{css}</style>
 </head>
 <body>
 <script type="text/plain" id="font-license">{font_license}</script>
@@ -100,5 +103,10 @@ for filename, route in routes.items():
 <script>{js}</script>
 </body>
 </html>'''
+
+for filename, route in routes.items():
+    html = render(route, 'assets/')
     (ROOT / filename).write_text(html)
     print(filename, len(html.encode()), 'bytes')
+# The project-root index.html is the same page, served from one level up.
+(ROOT.parent / 'index.html').write_text(render(routes['index.html'], 'preview/assets/'))

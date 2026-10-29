@@ -77,3 +77,18 @@
 .pay-list .later{opacity:.55}
 .pay-list .next .pay-amount small{color:var(--heritage);font-weight:600}
 @media (max-width:360px){.pay-meta{grid-template-columns:1fr 1fr}.care-stat strong{font-size:17px}.learn-hero h2{font-size:23px}}
+.learn-acc{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.learn-acc .learn-row{border:0;border-radius:0}
+.learn-acc .learn-row>svg:last-child{transition:transform .35s ease}
+.learn-acc.open .learn-row>svg:last-child{transform:rotate(90deg)}
+.learn-acc.open{border-color:var(--heritage)}
+.learn-panel{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.learn-acc.open .learn-panel{grid-template-rows:1fr}
+.learn-panel>.learn-panel-in{overflow:hidden;min-height:0}
+.learn-panel-body{padding:2px 14px 16px}
+.learn-panel-body .care-hero{margin:0 0 14px}
+.learn-panel-body .service-card{margin:0 0 14px;box-shadow:none}
+.learn-panel-body .step-list{padding:0;margin:0 0 14px}
+.learn-panel-body .learn-cta{padding:0}
+.learn-panel-body .accordion{margin:12px 0}
+@media (prefers-reduced-motion:reduce){.learn-panel,.learn-acc .learn-row>svg:last-child{transition:none}}
